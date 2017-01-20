@@ -1,2 +1,3 @@
-# django-component-views
-Django component views
+# web-fragments
+
+Web fragments
