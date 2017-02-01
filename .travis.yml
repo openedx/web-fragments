@@ -21,7 +21,12 @@ matrix:
 cache:
   - pip
 
+before_install:
+  - pip install --upgrade pip
+  - pip install --upgrade setuptools
+
 install:
+  - make upgrade
   - pip install -r requirements/travis.txt
 
 script:

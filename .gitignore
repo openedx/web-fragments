@@ -72,3 +72,6 @@ tests/__init__.py
 
 # Development task artifacts
 default.db
+
+# Pip-tools artifacts
+requirements/*.txt
