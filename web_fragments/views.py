@@ -23,6 +23,7 @@ class FragmentView(View):
 
     def get(self, request, *args, **kwargs):
         """
+        Render a fragment to html or return json describing it, based on the request.
         """
         fragment = self.render_fragment(request, *args, **kwargs)
         response_format = request.GET.get('format') or request.POST.get('format') or 'html'
@@ -35,6 +36,7 @@ class FragmentView(View):
 
     def render_standalone_html(self, fragment):
         """
+        Render html needed in the head, body and footer of the page needed by this fragment
         """
         template = get_template(STANDALONE_TEMPLATE_NAME)
         context = Context({
@@ -47,5 +49,6 @@ class FragmentView(View):
     @abstractmethod
     def render_fragment(self, request, **kwargs):
         """
+        Not implemented yet.
         """
         raise NotImplementedError()

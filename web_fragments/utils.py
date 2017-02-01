@@ -2,11 +2,11 @@
 Useful utilities.
 """
 
-import json
 import decimal
+import json
 
-from django.core.serializers.json import DjangoJSONEncoder
 from django.core.serializers import serialize
+from django.core.serializers.json import DjangoJSONEncoder
 from django.db.models.query import QuerySet
 from django.http import HttpResponse
 
@@ -52,5 +52,3 @@ class JsonResponse(HttpResponse):
         if status:
             kwargs["status"] = status
         super(JsonResponse, self).__init__(content, *args, **kwargs)
-
-

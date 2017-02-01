@@ -38,7 +38,7 @@ class Fragment(object):
     @property
     def resources(self):
         """
-        Returns list of unique `FragmentResource`\s by order of first appearance.
+        Returns list of unique `FragmentResource`s by order of first appearance.
         """
         seen = set()
         # seen.add always returns None, so 'not seen.add(x)' is always True,
@@ -65,7 +65,7 @@ class Fragment(object):
         """
         frag = cls()
         frag.content = pods['content']
-        frag._resources = [FragmentResource(**d) for d in pods['resources']]
+        frag._resources = [FragmentResource(**d) for d in pods['resources']]  # pylint: disable=protected-access
         frag.js_init_fn = pods['js_init_fn']
         frag.js_init_version = pods['js_init_version']
         return frag

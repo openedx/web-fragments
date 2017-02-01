@@ -4,5 +4,3 @@
 """
 Unit tests for web fragment views
 """
-
-
