@@ -4,8 +4,9 @@ Python representation of a web fragment.
 
 from collections import namedtuple
 
-
 FragmentResource = namedtuple("FragmentResource", "kind, data, mimetype, placement")  # pylint: disable=C0103
+
+JS_API_VERSION = 1
 
 
 class Fragment(object):
@@ -68,6 +69,7 @@ class Fragment(object):
         frag._resources = [FragmentResource(**d) for d in pods['resources']]  # pylint: disable=protected-access
         frag.js_init_fn = pods['js_init_fn']
         frag.js_init_version = pods['js_init_version']
+        frag.json_init_args = pods['json_init_args']
         return frag
 
     def add_content(self, content):
@@ -155,9 +157,9 @@ class Fragment(object):
         """
         self.add_resource_url(url, 'application/javascript')
 
-    def add_frag_resources(self, fragment):
+    def add_fragment_resources(self, fragment):
         """
-        Add all the resources from `fragment` to my resources.
+        Add all the resources from a single fragment to my resources.
 
         This is used to aggregate resources from another fragment that
         should be considered part of the current fragment.
@@ -167,7 +169,7 @@ class Fragment(object):
         """
         self._resources.extend(fragment.resources)
 
-    def add_frags_resources(self, fragments):
+    def add_resources(self, fragments):
         """
         Add all the resources from `fragments` to my resources.
 
@@ -178,7 +180,7 @@ class Fragment(object):
         together the content into this Fragment's content.
         """
         for fragment in fragments:
-            self.add_frag_resources(fragment)
+            self.add_fragment_resources(fragment)
 
     def initialize_js(self, js_func, json_args=None):
         """
@@ -189,13 +191,10 @@ class Fragment(object):
         environment, the function will be invoked, passing a runtime object
         and a DOM element.
         """
-        # This is version 1 of the interface.
         self.js_init_fn = js_func
-        self.js_init_version = 1
+        self.js_init_version = JS_API_VERSION
         if json_args:
             self.json_init_args = json_args
-
-    # Implementation methods: don't override
 
     def body_html(self):
         """
@@ -251,16 +250,20 @@ class Fragment(object):
                 return u"<style type='text/css'>\n%s\n</style>" % resource.data
             elif resource.kind == "url":
                 return u"<link rel='stylesheet' href='%s' type='text/css'>" % resource.data
+            else:
+                raise Exception("Unrecognized resource kind %r" % resource.kind)
 
         elif resource.mimetype == "application/javascript":
             if resource.kind == "text":
                 return u"<script>\n%s\n</script>" % resource.data
             elif resource.kind == "url":
                 return u"<script src='%s' type='application/javascript'></script>" % resource.data
+            else:
+                raise Exception("Unrecognized resource kind %r" % resource.kind)
 
         elif resource.mimetype == "text/html":
             assert resource.kind == "text"
             return resource.data
 
         else:
-            raise Exception("Never heard of mimetype %r" % resource.mimetype)
+            raise Exception("Unrecognized mimetype %r" % resource.mimetype)

@@ -7,16 +7,6 @@ Django applications, so these settings will not be used.
 
 from __future__ import absolute_import, unicode_literals
 
-from os.path import abspath, dirname, join
-
-
-def root(*args):
-    """
-    Get the absolute path of the given path relative to the project root.
-    """
-    return join(abspath(dirname(__file__)), *args)
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -34,10 +24,22 @@ INSTALLED_APPS = (
     'web_fragments',
 )
 
-LOCALE_PATHS = [
-    root('web_fragments', 'conf', 'locale'),
-]
-
-ROOT_URLCONF = 'web_fragments.urls'
+ROOT_URLCONF = 'web_fragments.examples.urls'
 
 SECRET_KEY = 'insecure-secret-key'
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+            'debug': True,
+        },
+    },
+]

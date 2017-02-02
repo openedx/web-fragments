@@ -1,5 +1,5 @@
 web-fragments
-=============================
+=============
 
 .. image:: https://img.shields.io/pypi/v/web-fragments.svg
     :target: https://pypi.python.org/pypi/web-fragments/
@@ -25,45 +25,53 @@ web-fragments
     :target: https://github.com/edx/web-fragments/blob/master/LICENSE.txt
     :alt: License
 
-The ``README.rst`` file should start with a brief description of the repository,
-which sets it in the context of other repositories under the ``edx``
-organization. It should make clear where this fits in to the overall edX
-codebase.
+Overview
+--------
 
-Web Fragments
+The web fragments library provides a Python and Django implementation for
+managing fragments of web pages. In particular, this library refactors the
+fragment code from XBlock into a standalone implementation.
 
-Overview (please modify)
-------------------------
+A Django view subclass called FragmentView is provided which supports three
+different ways of rendering a fragment into a page:
 
-The ``README.rst`` file should then provide an overview of the code in this
-repository, including the main components and useful entry points for starting
-to understand the code in more detail.
+* the fragment can be rendered as a standalone page at its own URL
+* the fragment can be rendered into another page directly from Django
+* the fragment can be returned as JSON so that it can be rendered client-side
 
-Documentation
--------------
+The rationale behind this design can be found in `OEP-12`_.
 
-The full documentation is at https://web-fragments.readthedocs.org.
+.. _OEP-12: http://open-edx-proposals.readthedocs.io/en/latest/oep-0012.html
+
+The intention is that a client-side implementation will be provided in a
+subsequent version. This should provide JavaScript code to request fragements
+over AJAX and then dynamically update the current page. This logic will be a
+refactoring of the current implementation in edx-platform for rendering XBlocks.
+It is also intended that this functionality will enhance the capabilities
+around dependency loading.
+
+.. Documentation
+.. -------------
+..
+.. The full documentation is at https://web-fragments.readthedocs.org.
 
 License
 -------
 
-The code in this repository is licensed under the AGPL 3.0 unless
-otherwise noted.
+The code in this repository is licensed under the AGPL 3.0 unless otherwise
+noted.
 
 Please see ``LICENSE.txt`` for details.
 
 How To Contribute
 -----------------
 
-Contributions are very welcome.
+Contributions are very welcome. Please read `Contributing to edX`_ for details.
 
-Please read `How To Contribute <https://github.com/edx/edx-platform/blob/master/CONTRIBUTING.rst>`_ for details.
+Note: Even though these guidelines were written with ``edx-platform`` in mind,
+they should be followed for Open edX code in general.
 
-Even though they were written with ``edx-platform`` in mind, the guidelines
-should be followed for Open edX code in general.
-
-PR description template can be found at
-`PR_TEMPLATE.md <https://github.com/edx/web-fragments/blob/master/PR_TEMPLATE.md>`_
+.. _Contributing to edX: https://github.com/edx/edx-platform/blob/master/CONTRIBUTING.rst
 
 Reporting Security Issues
 -------------------------
@@ -74,6 +82,6 @@ Getting Help
 ------------
 
 Have a question about this repository, or about Open edX in general?  Please
-refer to this `list of resources`_ if you need any assistance.
+refer to the Open edX guide to `Getting Help`_.
 
-.. _list of resources: https://open.edx.org/getting-help
+.. _Getting Help: https://open.edx.org/getting-help

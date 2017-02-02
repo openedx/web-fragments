@@ -51,7 +51,7 @@ quality: ## check coding style with pycodestyle and pylint
 	tox -e quality
 
 test: clean ## run tests in the current virtualenv
-	./manage.py test web_fragments/tests
+	py.test
 
 coverage: clean ## generate and view HTML coverage report
 	py.test --cov-report html
