@@ -72,20 +72,20 @@ class TestFragment(TestCase):
             },
         ]
 
-    def testToDict(self):
+    def test_to_dict(self):
         """
-        Tests the toDict method.
+        Tests the to_dict method.
         """
         fragment = self.create_test_fragment()
-        dict = fragment.to_dict()
-        self.assertEqual(dict['content'], TEST_HTML)
-        self.assertEqual(dict['js_init_fn'], TEST_JS_INIT_FN)
-        self.assertEqual(dict['js_init_version'], TEST_JS_INIT_VERSION)
-        self.assertEqual(dict['resources'], self.test_resources_dict())
+        fragment_dict = fragment.to_dict()
+        self.assertEqual(fragment_dict['content'], TEST_HTML)
+        self.assertEqual(fragment_dict['js_init_fn'], TEST_JS_INIT_FN)
+        self.assertEqual(fragment_dict['js_init_version'], TEST_JS_INIT_VERSION)
+        self.assertEqual(fragment_dict['resources'], self.test_resources_dict())
 
-    def testFromDict(self):
+    def test_from_dict(self):
         """
-        Tests the fromDict method.
+        Tests the from_dict method.
         """
         test_dict = {
             'content': TEST_HTML,
