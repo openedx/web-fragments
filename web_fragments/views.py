@@ -17,7 +17,7 @@ class FragmentView(View):
     """
     Base class for Django web fragment views.
     """
-    __metaclass__ = ABCMeta
+    _Base__metaclass__ = ABCMeta
 
     def get(self, request, *args, **kwargs):
         """
@@ -25,7 +25,7 @@ class FragmentView(View):
         """
         fragment = self.render_fragment(request, *args, **kwargs)
         response_format = request.GET.get('format') or request.POST.get('format') or 'html'
-        if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.META.get('HTTP_ACCEPT'):
+        if response_format == 'json' or request.META.get('HTTP_ACCEPT') == WEB_FRAGMENT_RESPONSE_TYPE:
             json = fragment.to_dict()
             return JsonResponse(json)
         else:
