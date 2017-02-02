@@ -1,7 +1,7 @@
 # openedx.yaml
 
 ---
-owner: edx/teaching-and-learning
+owner: edx/fedx-team
 nick: web-fragments
 tags:
     - tools

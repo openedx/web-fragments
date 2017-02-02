@@ -9,8 +9,6 @@ from django.template.context import Context
 from django.template.loader import get_template
 from django.views.generic import View
 
-from .utils import JsonResponse
-
 WEB_FRAGMENT_RESPONSE_TYPE = 'application/web-fragment'
 STANDALONE_TEMPLATE_NAME = 'web_fragments/standalone_fragment.html'
 
