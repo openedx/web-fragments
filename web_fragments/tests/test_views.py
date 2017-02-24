@@ -5,7 +5,7 @@
 Unit tests for web fragment views
 """
 
-from __future__ import absolute_import, unicode_literals
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import json
 
@@ -58,7 +58,7 @@ class TestViews(TestCase):
         Test that the view returns the correct JSON when requested.
         """
         response = self.invoke_test_view(arguments=arguments, http_accept=http_accept)
-        fragment_json = json.loads(response.content)
+        fragment_json = json.loads(response.content.decode(response.charset))
         assert fragment_json['content'] == TEST_HTML
 
     @ddt.data(
@@ -71,7 +71,7 @@ class TestViews(TestCase):
         Test fragment getter when html is requested
         """
         response = self.invoke_test_view(arguments=arguments, http_accept=http_accept)
-        assert TEST_HTML in response.content
+        assert TEST_HTML in response.content.decode(response.charset)
 
     def test_render_fragment_error(self):
         """

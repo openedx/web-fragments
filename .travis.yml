@@ -12,8 +12,6 @@ env:
   - TOXENV=django110
 
 matrix:
-  allow_failures:
-    - python: 3.5
   include:
     - python: 2.7
       env: TOXENV=quality
