@@ -21,20 +21,19 @@ class FragmentView(View):
 
     def get(self, request, *args, **kwargs):
         """
-        Render a fragment to html or return json describing it, based on the request.
+        Render a fragment to HTML or return JSON describing it, based on the request.
         """
-        fragment = self.render_fragment(request, *args, **kwargs)
+        fragment = self.render_to_fragment(request, **kwargs)
         response_format = request.GET.get('format') or request.POST.get('format') or 'html'
-        if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.META.get('HTTP_ACCEPT'):
-            json = fragment.to_dict()
-            return JsonResponse(json)
+        if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.META.get('HTTP_ACCEPT', 'text/html'):
+            return JsonResponse(fragment.to_dict())
         else:
-            html = self.render_standalone_html(fragment)
+            html = self.render_to_standalone_html(request, fragment, **kwargs)
             return HttpResponse(html)
 
-    def render_standalone_html(self, fragment):
+    def render_to_standalone_html(self, request, fragment, **kwargs):  # pylint: disable=unused-argument
         """
-        Render html needed in the head, body and footer of the page needed by this fragment
+        Render the specified fragment to HTML for a standalone page.
         """
         template = get_template(STANDALONE_TEMPLATE_NAME)
         context = Context({
@@ -45,8 +44,8 @@ class FragmentView(View):
         return template.render(context)
 
     @abstractmethod
-    def render_fragment(self, request, **kwargs):
+    def render_to_fragment(self, request, **kwargs):  # pylint: disable=unused-argument
         """
-        Not implemented yet.
+        Render this view to a fragment.
         """
         raise NotImplementedError()

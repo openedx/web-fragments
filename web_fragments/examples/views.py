@@ -19,7 +19,7 @@ class ExampleFragmentView(FragmentView):
     Simple fragment view for testing.
     """
 
-    def render_fragment(self, request, **kwargs):
+    def render_to_fragment(self, request, **kwargs):
         """
         Returns a simple fragment
         """

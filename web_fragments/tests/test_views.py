@@ -81,10 +81,10 @@ class TestViews(TestCase):
             """
             Mock fragment view to verify the default render_fragment method
             """
-            def render_fragment(self, request, **kwargs):
-                super(MockFragmentView, self).render_fragment(request, **kwargs)
+            def render_to_fragment(self, request, **kwargs):
+                super(MockFragmentView, self).render_to_fragment(request, **kwargs)
 
         view = MockFragmentView()
         request = self.create_mock_request()
         with pytest.raises(NotImplementedError):
-            view.render_fragment(request)
+            view.render_to_fragment(request)
