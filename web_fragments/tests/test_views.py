@@ -24,7 +24,7 @@ from web_fragments.views import FragmentView
 @ddt.ddt
 class TestViews(TestCase):
     """
-    Unit tests for views.
+    Unit tests for web fragment views.
     """
 
     def setUp(self):
@@ -88,3 +88,11 @@ class TestViews(TestCase):
         request = self.create_mock_request()
         with pytest.raises(NotImplementedError):
             view.render_to_fragment(request)
+
+    def test_render_with_no_fragment(self):
+        """
+        Verifies that a fragment view can render with no fragment.
+        """
+        request = self.create_mock_request()
+        response = ExampleFragmentView().render_standalone_response(request, None)
+        assert response.status_code == 204

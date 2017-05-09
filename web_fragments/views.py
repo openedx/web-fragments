@@ -28,8 +28,17 @@ class FragmentView(View):
         if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.META.get('HTTP_ACCEPT', 'text/html'):
             return JsonResponse(fragment.to_dict())
         else:
-            html = self.render_to_standalone_html(request, fragment, **kwargs)
-            return HttpResponse(html)
+            return self.render_standalone_response(request, fragment, **kwargs)
+
+    def render_standalone_response(self, request, fragment, **kwargs):  # pylint: disable=unused-argument
+        """
+        Renders a standalone page as a response for the specified fragment.
+        """
+        if fragment is None:
+            return HttpResponse(status=204)
+
+        html = self.render_to_standalone_html(request, fragment, **kwargs)
+        return HttpResponse(html)
 
     def render_to_standalone_html(self, request, fragment, **kwargs):  # pylint: disable=unused-argument
         """
