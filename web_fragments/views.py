@@ -5,7 +5,6 @@ Django view implementation of web fragments.
 from abc import ABCMeta, abstractmethod
 
 from django.http import HttpResponse, JsonResponse
-from django.template.context import Context
 from django.template.loader import get_template
 from django.views.generic import View
 
@@ -45,11 +44,11 @@ class FragmentView(View):
         Render the specified fragment to HTML for a standalone page.
         """
         template = get_template(STANDALONE_TEMPLATE_NAME)
-        context = Context({
+        context = {
             'head_html': fragment.head_html(),
             'body_html': fragment.body_html(),
             'foot_html': fragment.foot_html(),
-        })
+        }
         return template.render(context)
 
     @abstractmethod

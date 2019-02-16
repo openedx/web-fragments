@@ -4,7 +4,7 @@
 # $ pip install pylint edx-lint
 # $ pip freeze > new.txt
 # And replace the contents of this file with the lines in new.txt that don't exist in old.txt
-pluggy==0.4.0
-tox==2.6.0
-tox-battery==0.3
-virtualenv==15.1.0
+pluggy==0.8.1
+tox==3.7.0
+tox-battery==0.5.1
+virtualenv==16.4.0
