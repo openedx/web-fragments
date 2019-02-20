@@ -5,6 +5,7 @@ Python representation of a web fragment.
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 from collections import namedtuple
+
 import six
 
 FragmentResource = namedtuple("FragmentResource", "kind, data, mimetype, placement")  # pylint: disable=C0103

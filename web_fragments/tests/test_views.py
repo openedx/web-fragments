@@ -12,9 +12,9 @@ import json
 import ddt
 import pytest
 
-from django.core.urlresolvers import reverse
 from django.test import TestCase
 from django.test.client import RequestFactory
+from django.urls import reverse
 
 from web_fragments.examples.views import EXAMPLE_FRAGMENT_VIEW_NAME, ExampleFragmentView
 from web_fragments.test_utils import TEST_HTML
