@@ -7,3 +7,4 @@ edx_sphinx_theme          # edX theme for Sphinx output
 readme_renderer           # Validates README.rst for usage on PyPI
 Sphinx                    # Documentation builder
 sphinxcontrib-napoleon    # Google Style docstring support for sphinx
+twine
