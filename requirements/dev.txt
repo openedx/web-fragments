@@ -4,49 +4,32 @@
 #
 #    pip-compile --output-file=requirements/dev.txt requirements/dev.in requirements/quality.in
 #
-argparse==1.4.0           # via caniusepython3
-backports.functools-lru-cache==1.6.1  # via caniusepython3, isort
-backports.os==0.1.1       # via path.py
 bleach==3.1.0             # via readme-renderer
-caniusepython3==7.2.0
 certifi==2019.9.11        # via requests
 chardet==3.0.4            # via requests
 click==7.0                # via pip-tools
-configparser==4.0.2       # via importlib-metadata, pydocstyle
-contextlib2==0.6.0.post1  # via importlib-metadata
 diff-cover==2.4.0
-distlib==0.3.0            # via caniusepython3
-django==1.11.26
+django==1.11.28           # via edx-i18n-tools
 docutils==0.15.2          # via readme-renderer
 edx-i18n-tools==0.4.8
-future==0.18.2            # via backports.os
-futures==3.3.0            # via caniusepython3, isort
 idna==2.8                 # via requests
 importlib-metadata==0.23  # via inflect, path.py
 inflect==3.0.2            # via jinja2-pluralize
-isort==4.3.21
 jinja2-pluralize==0.3.0   # via diff-cover
 jinja2==2.10.3            # via diff-cover, jinja2-pluralize
 markupsafe==1.1.1         # via jinja2
 more-itertools==5.0.0     # via zipp
-packaging==19.2           # via caniusepython3
 path.py==11.5.2           # via edx-i18n-tools
-pathlib2==2.3.5           # via importlib-metadata
 pip-tools==4.2.0
 pkginfo==1.5.0.1          # via twine
 polib==1.1.0              # via edx-i18n-tools
-pycodestyle==2.5.0
-pydocstyle==3.0.0
 pygments==2.4.2           # via diff-cover, readme-renderer
-pyparsing==2.4.5          # via packaging
 pytz==2019.3              # via django
 pyyaml==5.1.2             # via edx-i18n-tools
 readme-renderer==24.0     # via twine
 requests-toolbelt==0.9.1  # via twine
-requests==2.22.0          # via caniusepython3, requests-toolbelt, twine
-scandir==1.10.0           # via pathlib2
-six==1.13.0               # via bleach, diff-cover, edx-i18n-tools, more-itertools, packaging, pathlib2, pip-tools, pydocstyle, readme-renderer
-snowballstemmer==2.0.0    # via pydocstyle
+requests==2.22.0          # via requests-toolbelt, twine
+six==1.13.0               # via bleach, diff-cover, edx-i18n-tools, more-itertools, pip-tools, readme-renderer
 tqdm==4.38.0              # via twine
 twine==1.15.0
 urllib3==1.25.7           # via requests
@@ -55,30 +38,4 @@ wheel==0.33.6
 zipp==0.6.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.6.0        # via caniusepython3, twine
-# These packages are installed with `pip install pylint edx-lint`
-# To update the versions, create an empty virtualenv, run the following commands:
-# $ pip freeze > old.txt
-# $ pip install pylint edx-lint
-# $ pip freeze > new.txt
-# And replace the contents of this file with the lines in new.txt that don't exist in old.txt
-astroid==1.4.9
-configparser==3.5.0
-edx-lint==0.5.2
-lazy-object-proxy==1.2.2
-mccabe==0.6.1
-pylint==1.6.5
-pylint-celery==0.3
-pylint-django==0.7.2
-pylint-plugin-utils==0.2.4
-wrapt==1.10.8
-# These packages are installed with `pip install pylint edx-lint`
-# To update the versions, create an empty virtualenv, run the following commands:
-# $ pip freeze > old.txt
-# $ pip install pylint edx-lint
-# $ pip freeze > new.txt
-# And replace the contents of this file with the lines in new.txt that don't exist in old.txt
-pluggy==0.8.1
-tox==3.7.0
-tox-battery==0.5.1
-virtualenv==16.4.0
+# setuptools

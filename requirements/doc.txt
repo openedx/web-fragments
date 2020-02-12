@@ -9,7 +9,7 @@ babel==2.7.0              # via sphinx
 bleach==3.1.0             # via readme-renderer
 certifi==2019.9.11        # via requests
 chardet==3.0.4            # via doc8, requests
-django==1.11.26
+django==1.11.28
 doc8==0.8.0
 docutils==0.15.2          # via doc8, readme-renderer, restructuredtext-lint, sphinx
 edx-sphinx-theme==1.5.0
@@ -36,9 +36,8 @@ sphinxcontrib-websupport==1.1.2  # via sphinx
 stevedore==1.31.0         # via doc8
 tqdm==4.38.0              # via twine
 twine==1.15.0
-typing==3.7.4.1           # via sphinx
 urllib3==1.25.7           # via requests
 webencodings==0.5.1       # via bleach
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.6.0        # via sphinx, twine
+# setuptools
