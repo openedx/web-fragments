@@ -1,5 +1,7 @@
 # Requirements for test runs.
 
+-c constraints.txt
+
 pytest-cov                # pytest extension for code coverage statistics
 pytest-django             # pytest extension for better Django support
 ddt                       # Python support for data-driven tests

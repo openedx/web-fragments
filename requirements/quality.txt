@@ -5,28 +5,27 @@
 #    pip-compile --output-file=requirements/quality.txt requirements/quality.in
 #
 argparse==1.4.0           # via caniusepython3
-backports.functools-lru-cache==1.6.1  # via caniusepython3, isort
-caniusepython3==7.2.0
-certifi==2019.9.11        # via requests
+backports.functools-lru-cache==1.6.1  # via caniusepython3
+caniusepython3==7.2.0     # via -r requirements/quality.in
+certifi==2020.4.5.1       # via requests
 chardet==3.0.4            # via requests
-configparser==4.0.2       # via pydocstyle
 distlib==0.3.0            # via caniusepython3
-django==1.11.26
-futures==3.3.0            # via caniusepython3, isort
-idna==2.8                 # via requests
-isort==4.3.21
-packaging==19.2           # via caniusepython3
-pycodestyle==2.5.0
-pydocstyle==3.0.0
-pyparsing==2.4.5          # via packaging
-pytz==2019.3              # via django
-requests==2.22.0          # via caniusepython3
-six==1.13.0               # via packaging, pydocstyle
+django==2.2.12            # via -c requirements/constraints.txt, -r requirements/quality.in
+idna==2.9                 # via requests
+isort==4.3.21             # via -r requirements/quality.in
+packaging==20.3           # via caniusepython3
+pycodestyle==2.5.0        # via -r requirements/quality.in
+pydocstyle==5.0.2         # via -r requirements/quality.in
+pyparsing==2.4.7          # via packaging
+pytz==2020.1              # via django
+requests==2.23.0          # via caniusepython3
+six==1.14.0               # via packaging
 snowballstemmer==2.0.0    # via pydocstyle
-urllib3==1.25.7           # via requests
+sqlparse==0.3.1           # via django
+urllib3==1.25.9           # via requests
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.6.0        # via caniusepython3
+# setuptools
 # These packages are installed with `pip install pylint edx-lint`
 # To update the versions, create an empty virtualenv, run the following commands:
 # $ pip freeze > old.txt

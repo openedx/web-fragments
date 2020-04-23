@@ -5,57 +5,53 @@
 #    pip-compile --output-file=requirements/dev.txt requirements/dev.in requirements/quality.in
 #
 argparse==1.4.0           # via caniusepython3
-backports.functools-lru-cache==1.6.1  # via caniusepython3, isort
-backports.os==0.1.1       # via path.py
-bleach==3.1.0             # via readme-renderer
-caniusepython3==7.2.0
-certifi==2019.9.11        # via requests
+backports.functools-lru-cache==1.6.1  # via caniusepython3
+bleach==3.1.5             # via readme-renderer
+caniusepython3==7.2.0     # via -r requirements/quality.in
+certifi==2020.4.5.1       # via requests
 chardet==3.0.4            # via requests
-click==7.0                # via pip-tools
-configparser==4.0.2       # via importlib-metadata, pydocstyle
-contextlib2==0.6.0.post1  # via importlib-metadata
-diff-cover==2.4.0
+click==7.1.2              # via pip-tools
+diff-cover==2.6.1         # via -r requirements/dev.in
 distlib==0.3.0            # via caniusepython3
-django==1.11.26
-docutils==0.15.2          # via readme-renderer
-edx-i18n-tools==0.4.8
-future==0.18.2            # via backports.os
-futures==3.3.0            # via caniusepython3, isort
-idna==2.8                 # via requests
-importlib-metadata==0.23  # via inflect, path.py
+django==2.2.12            # via -c requirements/constraints.txt, -r requirements/quality.in, edx-i18n-tools
+docutils==0.16            # via readme-renderer
+edx-i18n-tools==0.5.0     # via -r requirements/dev.in
+idna==2.9                 # via requests
+importlib-metadata==1.6.0  # via inflect, path, pluggy
 inflect==3.0.2            # via jinja2-pluralize
-isort==4.3.21
+isort==4.3.21             # via -r requirements/quality.in
 jinja2-pluralize==0.3.0   # via diff-cover
-jinja2==2.10.3            # via diff-cover, jinja2-pluralize
+jinja2==2.11.2            # via diff-cover, jinja2-pluralize
 markupsafe==1.1.1         # via jinja2
-more-itertools==5.0.0     # via zipp
-packaging==19.2           # via caniusepython3
-path.py==11.5.2           # via edx-i18n-tools
-pathlib2==2.3.5           # via importlib-metadata
-pip-tools==4.2.0
+packaging==20.3           # via bleach, caniusepython3
+path.py==12.4.0           # via edx-i18n-tools
+path==13.1.0              # via path.py
+pip-tools==5.1.1          # via -r requirements/dev.in
 pkginfo==1.5.0.1          # via twine
+pluggy==0.13.1            # via diff-cover
 polib==1.1.0              # via edx-i18n-tools
-pycodestyle==2.5.0
-pydocstyle==3.0.0
-pygments==2.4.2           # via diff-cover, readme-renderer
-pyparsing==2.4.5          # via packaging
-pytz==2019.3              # via django
-pyyaml==5.1.2             # via edx-i18n-tools
-readme-renderer==24.0     # via twine
+pycodestyle==2.5.0        # via -r requirements/quality.in
+pydocstyle==5.0.2         # via -r requirements/quality.in
+pygments==2.6.1           # via diff-cover, readme-renderer
+pyparsing==2.4.7          # via packaging
+pytz==2020.1              # via django
+pyyaml==5.3.1             # via edx-i18n-tools
+readme-renderer==26.0     # via twine
 requests-toolbelt==0.9.1  # via twine
-requests==2.22.0          # via caniusepython3, requests-toolbelt, twine
-scandir==1.10.0           # via pathlib2
-six==1.13.0               # via bleach, diff-cover, edx-i18n-tools, more-itertools, packaging, pathlib2, pip-tools, pydocstyle, readme-renderer
+requests==2.23.0          # via caniusepython3, requests-toolbelt, twine
+six==1.14.0               # via bleach, diff-cover, edx-i18n-tools, packaging, pip-tools, readme-renderer
 snowballstemmer==2.0.0    # via pydocstyle
-tqdm==4.38.0              # via twine
-twine==1.15.0
-urllib3==1.25.7           # via requests
+sqlparse==0.3.1           # via django
+tqdm==4.46.0              # via twine
+twine==1.15.0             # via -r requirements/dev.in
+urllib3==1.25.9           # via requests
 webencodings==0.5.1       # via bleach
-wheel==0.33.6
-zipp==0.6.0               # via importlib-metadata
+wheel==0.34.2             # via -r requirements/dev.in
+zipp==1.2.0               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.6.0        # via caniusepython3, twine
+# pip
+# setuptools
 # These packages are installed with `pip install pylint edx-lint`
 # To update the versions, create an empty virtualenv, run the following commands:
 # $ pip freeze > old.txt
@@ -78,7 +74,10 @@ wrapt==1.10.8
 # $ pip install pylint edx-lint
 # $ pip freeze > new.txt
 # And replace the contents of this file with the lines in new.txt that don't exist in old.txt
+
+-c constraints.txt
+
 pluggy==0.8.1
 tox==3.7.0
-tox-battery==0.5.1
+tox-battery==0.5.2
 virtualenv==16.4.0
