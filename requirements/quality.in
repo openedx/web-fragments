@@ -1,7 +1,8 @@
 # Requirements for code quality checks
 
-django
+-c constraints.txt
 
+django
 caniusepython3            # Additional Python 3 compatibility pylint checks
 isort                     # to standardize order of imports
 pycodestyle               # PEP 8 compliance validation

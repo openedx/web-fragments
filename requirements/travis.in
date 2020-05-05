@@ -1,3 +1,7 @@
 # Requirements for running tests in Travis
 
+-c constraints.txt
+-r base.txt
+
 codecov                   # Code coverage reporting
+
