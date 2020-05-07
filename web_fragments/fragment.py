@@ -13,7 +13,7 @@ FragmentResource = namedtuple("FragmentResource", "kind, data, mimetype, placeme
 JS_API_VERSION = 1
 
 
-class Fragment(object):
+class Fragment:
     """
     A fragment of a web page to be included on another page.
 
@@ -252,22 +252,21 @@ class Fragment(object):
         if resource.mimetype == "text/css":
             if resource.kind == "text":
                 return u"<style type='text/css'>\n%s\n</style>" % resource.data
-            elif resource.kind == "url":
+            if resource.kind == "url":
                 return u"<link rel='stylesheet' href='%s' type='text/css'>" % resource.data
-            else:
-                raise Exception("Unrecognized resource kind %r" % resource.kind)
 
-        elif resource.mimetype == "application/javascript":
+            raise Exception("Unrecognized resource kind %r" % resource.kind)
+
+        if resource.mimetype == "application/javascript":
             if resource.kind == "text":
                 return u"<script>\n%s\n</script>" % resource.data
-            elif resource.kind == "url":
+            if resource.kind == "url":
                 return u"<script src='%s' type='application/javascript'></script>" % resource.data
-            else:
-                raise Exception("Unrecognized resource kind %r" % resource.kind)
 
-        elif resource.mimetype == "text/html":
+            raise Exception("Unrecognized resource kind %r" % resource.kind)
+
+        if resource.mimetype == "text/html":
             assert resource.kind == "text"
             return resource.data
 
-        else:
-            raise Exception("Unrecognized mimetype %r" % resource.mimetype)
+        raise Exception("Unrecognized mimetype %r" % resource.mimetype)

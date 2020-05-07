@@ -4,4 +4,5 @@
 
 pytest-cov                # pytest extension for code coverage statistics
 pytest-django             # pytest extension for better Django support
-ddt                       # Python support for data-driven tests
+# new ddt is giving error with nose package.
+ddt<1.4.0                 # Python support for data-driven tests

@@ -61,10 +61,6 @@ class TestFragment(TestCase):
     """
     Unit tests for fragments.
     """
-
-    def setUp(self):
-        super(TestFragment, self).setUp()
-
     def create_test_fragment(self):
         """
         Creates a fragment for use in unit tests.

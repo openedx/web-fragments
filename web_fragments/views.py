@@ -18,7 +18,7 @@ class FragmentView(View):
     """
     __metaclass__ = ABCMeta
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):  # pylint: disable=unused-argument
         """
         Render a fragment to HTML or return JSON describing it, based on the request.
         """
@@ -26,8 +26,8 @@ class FragmentView(View):
         response_format = request.GET.get('format') or request.POST.get('format') or 'html'
         if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.META.get('HTTP_ACCEPT', 'text/html'):
             return JsonResponse(fragment.to_dict())
-        else:
-            return self.render_standalone_response(request, fragment, **kwargs)
+
+        return self.render_standalone_response(request, fragment, **kwargs)
 
     def render_standalone_response(self, request, fragment, **kwargs):  # pylint: disable=unused-argument
         """
