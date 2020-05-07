@@ -10,10 +10,6 @@ env:
   - TOXENV=quality
   - TOXENV=docs
 
-jobs:
-  allow_failures:
-    - python: 3.8
-
 cache:
   - pip
 before_install:

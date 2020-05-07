@@ -81,7 +81,7 @@ class TestViews(TestCase):
             """
             Mock fragment view to verify the default render_fragment method
             """
-            def render_to_fragment(self, request, **kwargs):
+            def render_to_fragment(self, request, **kwargs):  # pylint: disable=useless-super-delegation
                 super(MockFragmentView, self).render_to_fragment(request, **kwargs)
 
         view = MockFragmentView()
