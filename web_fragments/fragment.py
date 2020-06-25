@@ -1,9 +1,6 @@
 """
 Python representation of a web fragment.
 """
-
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 from collections import namedtuple
 
 import six
@@ -30,7 +27,7 @@ class Fragment:
     """
     def __init__(self, content=None):
         #: The html content for this Fragment
-        self.content = u""
+        self.content = ""
 
         self._resources = []
         self.js_init_fn = None
@@ -251,17 +248,17 @@ class Fragment:
         """
         if resource.mimetype == "text/css":
             if resource.kind == "text":
-                return u"<style type='text/css'>\n%s\n</style>" % resource.data
+                return "<style type='text/css'>\n%s\n</style>" % resource.data
             if resource.kind == "url":
-                return u"<link rel='stylesheet' href='%s' type='text/css'>" % resource.data
+                return "<link rel='stylesheet' href='%s' type='text/css'>" % resource.data
 
             raise Exception("Unrecognized resource kind %r" % resource.kind)
 
         if resource.mimetype == "application/javascript":
             if resource.kind == "text":
-                return u"<script>\n%s\n</script>" % resource.data
+                return "<script>\n%s\n</script>" % resource.data
             if resource.kind == "url":
-                return u"<script src='%s' type='application/javascript'></script>" % resource.data
+                return "<script src='%s' type='application/javascript'></script>" % resource.data
 
             raise Exception("Unrecognized resource kind %r" % resource.kind)
 

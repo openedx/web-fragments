@@ -1,9 +1,6 @@
 """
 Test utilities.
 """
-
-from __future__ import absolute_import, unicode_literals
-
 TEST_HTML = '<p>Hello, world!</p>'
 TEST_CSS = 'body {background-color:red;}'
 TEST_CSS_URL = '/css/test.css'

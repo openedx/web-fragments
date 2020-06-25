@@ -4,9 +4,6 @@
 """
 Unit tests for the Fragment class.
 """
-
-from __future__ import absolute_import, unicode_literals
-
 import ddt
 import pytest
 

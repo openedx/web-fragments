@@ -4,9 +4,6 @@
 """
 Example fragment view.
 """
-
-from __future__ import absolute_import, unicode_literals
-
 from web_fragments.fragment import Fragment
 from web_fragments.test_utils import TEST_CSS, TEST_HTML, TEST_JS
 from web_fragments.views import FragmentView

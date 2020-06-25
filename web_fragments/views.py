@@ -1,7 +1,6 @@
 """
 Django view implementation of web fragments.
 """
-
 from abc import ABCMeta, abstractmethod
 
 from django.http import HttpResponse, JsonResponse
@@ -12,11 +11,10 @@ WEB_FRAGMENT_RESPONSE_TYPE = 'application/web-fragment'
 STANDALONE_TEMPLATE_NAME = 'web_fragments/standalone_fragment.html'
 
 
-class FragmentView(View):
+class FragmentView(View, metaclass=ABCMeta):
     """
     Base class for Django web fragment views.
     """
-    __metaclass__ = ABCMeta
 
     def get(self, request, *args, **kwargs):  # pylint: disable=unused-argument
         """
