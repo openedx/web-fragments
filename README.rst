@@ -5,9 +5,9 @@ web-fragments
     :target: https://pypi.python.org/pypi/web-fragments/
     :alt: PyPI
 
-.. image:: https://travis-ci.org/edx/web-fragments.svg?branch=master
-    :target: https://travis-ci.org/edx/web-fragments
-    :alt: Travis
+.. image:: https://github.com/edx/web-fragments/workflows/Python%20CI/badge.svg?branch=master
+    :target: https://github.com/edx/web-fragments/actions
+    :alt: CI
 
 .. image:: http://codecov.io/github/edx/web-fragments/coverage.svg?branch=master
     :target: http://codecov.io/github/edx/web-fragments?branch=master
