@@ -7,7 +7,7 @@
 
 -c constraints.txt
 
-pluggy==0.8.1
-tox==3.7.0
-tox-battery==0.5.2
-virtualenv==16.4.0
+pluggy
+tox
+tox-battery
+virtualenv
