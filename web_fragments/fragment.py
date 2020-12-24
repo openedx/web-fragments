@@ -81,7 +81,7 @@ class Fragment:
         fragment.  It must not contain a ``<body>`` tag, or otherwise assume
         that it is the only content on the page.
         """
-        assert isinstance(content, six.text_type)
+        assert isinstance(content, str)
         self.content += content
 
     def _default_placement(self, mimetype):

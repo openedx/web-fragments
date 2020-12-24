@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 """
 Unit tests for web fragment views
@@ -25,7 +24,7 @@ class TestViews(TestCase):
     """
 
     def setUp(self):
-        super(TestViews, self).setUp()
+        super().setUp()
         self.requests_factory = RequestFactory()
 
     def create_mock_request(self, method=None, arguments=None, http_accept='text/html'):
@@ -79,7 +78,7 @@ class TestViews(TestCase):
             Mock fragment view to verify the default render_fragment method
             """
             def render_to_fragment(self, request, **kwargs):  # pylint: disable=useless-super-delegation
-                super(MockFragmentView, self).render_to_fragment(request, **kwargs)
+                super().render_to_fragment(request, **kwargs)
 
         view = MockFragmentView()
         request = self.create_mock_request()
