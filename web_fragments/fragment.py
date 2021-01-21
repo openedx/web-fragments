@@ -1,9 +1,8 @@
 """
 Python representation of a web fragment.
 """
-from collections import namedtuple
 
-import six
+from collections import namedtuple
 
 FragmentResource = namedtuple("FragmentResource", "kind, data, mimetype, placement")  # pylint: disable=C0103
 
@@ -81,7 +80,7 @@ class Fragment:
         fragment.  It must not contain a ``<body>`` tag, or otherwise assume
         that it is the only content on the page.
         """
-        assert isinstance(content, six.text_type)
+        assert isinstance(content, str)
         self.content += content
 
     def _default_placement(self, mimetype):

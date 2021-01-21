@@ -4,13 +4,20 @@
 #
 #    pip-compile --output-file=requirements/ci.txt requirements/ci.in
 #
-certifi==2020.12.5        # via requests
-chardet==3.0.4            # via requests
-codecov==2.1.10           # via -r requirements/ci.in
-coverage==5.3             # via codecov
-idna==2.10                # via requests
-requests==2.25.0          # via codecov
-urllib3==1.26.2           # via requests
+certifi==2020.12.5
+    # via requests
+chardet==4.0.0
+    # via requests
+codecov==2.1.11
+    # via -r requirements/ci.in
+coverage==5.3.1
+    # via codecov
+idna==2.10
+    # via requests
+requests==2.25.1
+    # via codecov
+urllib3==1.26.2
+    # via requests
 # These packages are installed with `pip install pylint edx-lint`
 # To update the versions, create an empty virtualenv, run the following commands:
 # $ pip freeze > old.txt
