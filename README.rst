@@ -6,7 +6,7 @@ web-fragments
     :alt: PyPI
 
 .. image:: https://github.com/edx/web-fragments/workflows/Python%20CI/badge.svg?branch=master
-    :target: https://github.com/edx/web-fragments/actions
+    :target: https://github.com/edx/web-fragments/actions?query=workflow%3A%22Python+CI%22
     :alt: CI
 
 .. image:: http://codecov.io/github/edx/web-fragments/coverage.svg?branch=master
