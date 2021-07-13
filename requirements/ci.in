@@ -4,4 +4,7 @@
 -r base.txt
 
 codecov                   # Code coverage reporting
-
+pluggy
+tox
+tox-battery
+virtualenv
