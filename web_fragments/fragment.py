@@ -247,22 +247,22 @@ class Fragment:
         """
         if resource.mimetype == "text/css":
             if resource.kind == "text":
-                return "<style type='text/css'>\n%s\n</style>" % resource.data
+                return f"<style type='text/css'>\n{resource.data}\n</style>"
             if resource.kind == "url":
-                return "<link rel='stylesheet' href='%s' type='text/css'>" % resource.data
+                return f"<link rel='stylesheet' href='{resource.data}' type='text/css'>"
 
-            raise Exception("Unrecognized resource kind %r" % resource.kind)
+            raise Exception(f"Unrecognized resource kind {resource.kind}")
 
         if resource.mimetype == "application/javascript":
             if resource.kind == "text":
-                return "<script>\n%s\n</script>" % resource.data
+                return f"<script>\n{resource.data}\n</script>"
             if resource.kind == "url":
-                return "<script src='%s' type='application/javascript'></script>" % resource.data
+                return f"<script src='{resource.data}' type='application/javascript'></script>"
 
-            raise Exception("Unrecognized resource kind %r" % resource.kind)
+            raise Exception(f"Unrecognized resource kind {resource.kind}")
 
         if resource.mimetype == "text/html":
             assert resource.kind == "text"
             return resource.data
 
-        raise Exception("Unrecognized mimetype %r" % resource.mimetype)
+        raise Exception("Unrecognized mimetype {resource.mimetype}")
