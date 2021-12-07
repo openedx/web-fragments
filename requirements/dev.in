@@ -5,5 +5,9 @@
 diff-cover                # Changeset diff test coverage
 edx-i18n-tools            # For i18n_tool dummy
 pip-tools                 # Requirements file management
+pluggy
+tox
+tox-battery
 twine                     # Utility for PyPI package uploads
+virtualenv
 wheel                     # For generation of wheels for PyPI
