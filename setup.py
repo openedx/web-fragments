@@ -49,7 +49,6 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Django',
-        'Framework :: Django :: 2.2',
         'Framework :: Django :: 3.0',
         'Framework :: Django :: 3.1',
         'Framework :: Django :: 3.2',
@@ -60,6 +59,6 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     extras_require={
-        'Django': ['Django>=2.2,<2.3'],
+        'Django': ['Django>=3.0,<3.3'],
     }
 )
