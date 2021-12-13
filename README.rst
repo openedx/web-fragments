@@ -41,7 +41,7 @@ different ways of rendering a fragment into a page:
 
 The rationale behind this design can be found in `OEP-12`_.
 
-.. _OEP-12: http://open-edx-proposals.readthedocs.io/en/latest/oep-0012.html
+.. _OEP-12: https://open-edx-proposals.readthedocs.io/en/latest/architectural-decisions/oep-0012-arch-fragment-views.html
 
 The intention is that a client-side implementation will be provided in a
 subsequent version. This should provide JavaScript code to request fragements
