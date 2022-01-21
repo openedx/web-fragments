@@ -55,7 +55,7 @@ filelock==3.4.2
     #   virtualenv
 idna==3.3
     # via requests
-importlib-metadata==4.10.0
+importlib-metadata==4.10.1
     # via
     #   keyring
     #   twine
