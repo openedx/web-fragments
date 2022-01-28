@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements/quality.txt requirements/quality.in
 #
-asgiref==3.4.1
+asgiref==3.5.0
     # via django
 astroid==2.9.3
     # via
