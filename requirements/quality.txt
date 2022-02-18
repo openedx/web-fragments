@@ -33,7 +33,7 @@ jinja2==3.0.3
     # via code-annotations
 lazy-object-proxy==1.7.1
     # via astroid
-markupsafe==2.0.1
+markupsafe==2.1.0
     # via jinja2
 mccabe==0.6.1
     # via pylint
@@ -53,13 +53,13 @@ pylint==2.12.2
     #   pylint-plugin-utils
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.5.0
+pylint-django==2.5.1
     # via edx-lint
 pylint-plugin-utils==0.7
     # via
     #   pylint-celery
     #   pylint-django
-python-slugify==5.0.2
+python-slugify==6.0.1
     # via code-annotations
 pytz==2021.3
     # via django
@@ -77,7 +77,7 @@ text-unidecode==1.3
     # via python-slugify
 toml==0.10.2
     # via pylint
-typing-extensions==4.0.1
+typing-extensions==4.1.1
     # via
     #   astroid
     #   pylint
