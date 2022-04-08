@@ -10,7 +10,7 @@ asgiref==3.5.0
     # via django
 babel==2.9.1
     # via sphinx
-bleach==4.1.0
+bleach==5.0.0
     # via readme-renderer
 certifi==2021.10.8
     # via requests
@@ -45,7 +45,7 @@ importlib-metadata==4.11.3
     #   keyring
     #   sphinx
     #   twine
-jeepney==0.7.1
+jeepney==0.8.0
     # via
     #   keyring
     #   secretstorage
@@ -56,9 +56,7 @@ keyring==23.5.0
 markupsafe==2.1.1
     # via jinja2
 packaging==21.3
-    # via
-    #   bleach
-    #   sphinx
+    # via sphinx
 pbr==5.8.1
     # via stevedore
 pkginfo==1.8.2
@@ -94,7 +92,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==12.0.1
+rich==12.2.0
     # via twine
 secretstorage==3.3.1
     # via keyring
@@ -130,11 +128,13 @@ stevedore==3.5.0
     # via doc8
 twine==4.0.0
     # via -r requirements/doc.in
+typing-extensions==4.1.1
+    # via rich
 urllib3==1.26.9
     # via
     #   requests
     #   twine
 webencodings==0.5.1
     # via bleach
-zipp==3.7.0
+zipp==3.8.0
     # via importlib-metadata
