@@ -10,7 +10,7 @@ astroid==2.11.2
     # via
     #   pylint
     #   pylint-celery
-bleach==4.1.0
+bleach==5.0.0
     # via readme-renderer
 certifi==2021.10.8
     # via requests
@@ -65,7 +65,7 @@ isort==5.10.1
     # via
     #   -r requirements/quality.in
     #   pylint
-jeepney==0.7.1
+jeepney==0.8.0
     # via
     #   keyring
     #   secretstorage
@@ -82,16 +82,14 @@ markupsafe==2.1.1
 mccabe==0.7.0
     # via pylint
 packaging==21.3
-    # via
-    #   bleach
-    #   tox
+    # via tox
 path==16.4.0
     # via edx-i18n-tools
 pbr==5.8.1
     # via stevedore
 pep517==0.12.0
     # via pip-tools
-pip-tools==6.5.1
+pip-tools==6.6.0
     # via -r requirements/dev.in
 pkginfo==1.8.2
     # via twine
@@ -119,7 +117,7 @@ pygments==2.11.2
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.13.4
+pylint==2.13.5
     # via
     #   edx-lint
     #   pylint-celery
@@ -153,7 +151,7 @@ requests-toolbelt==0.9.1
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==12.0.1
+rich==12.2.0
     # via twine
 secretstorage==3.3.1
     # via keyring
@@ -189,6 +187,7 @@ typing-extensions==4.1.1
     # via
     #   astroid
     #   pylint
+    #   rich
 urllib3==1.26.9
     # via
     #   requests
@@ -205,7 +204,7 @@ wheel==0.37.1
     #   pip-tools
 wrapt==1.14.0
     # via astroid
-zipp==3.7.0
+zipp==3.8.0
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
