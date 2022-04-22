@@ -8,7 +8,7 @@ alabaster==0.7.12
     # via sphinx
 asgiref==3.5.0
     # via django
-babel==2.9.1
+babel==2.10.1
     # via sphinx
 bleach==5.0.0
     # via readme-renderer
@@ -77,7 +77,7 @@ pytz==2022.1
     # via
     #   babel
     #   django
-readme-renderer==34.0
+readme-renderer==35.0
     # via
     #   -r requirements/doc.in
     #   twine
@@ -94,7 +94,7 @@ rfc3986==2.0.0
     # via twine
 rich==12.2.0
     # via twine
-secretstorage==3.3.1
+secretstorage==3.3.2
     # via keyring
 six==1.16.0
     # via
@@ -128,7 +128,7 @@ stevedore==3.5.0
     # via doc8
 twine==4.0.0
     # via -r requirements/doc.in
-typing-extensions==4.1.1
+typing-extensions==4.2.0
     # via rich
 urllib3==1.26.9
     # via
