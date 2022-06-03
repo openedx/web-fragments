@@ -28,7 +28,7 @@ django==3.2.13
     #   -r requirements/doc.in
 doc8==0.11.2
     # via -r requirements/doc.in
-docutils==0.17.1
+docutils==0.18.1
     # via
     #   doc8
     #   readme-renderer
@@ -104,7 +104,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==4.5.0
+sphinx==5.0.1
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
@@ -126,7 +126,7 @@ sqlparse==0.4.2
     # via django
 stevedore==3.5.0
     # via doc8
-twine==4.0.0
+twine==4.0.1
     # via -r requirements/doc.in
 typing-extensions==4.2.0
     # via rich
