@@ -16,7 +16,7 @@ class FragmentView(View, metaclass=ABCMeta):
     Base class for Django web fragment views.
     """
 
-    def get(self, request, *args, **kwargs):  # pylint: disable=unused-argument
+    def get(self, request, *args, **kwargs):
         """
         Render a fragment to HTML or return JSON describing it, based on the request.
         """
@@ -27,7 +27,7 @@ class FragmentView(View, metaclass=ABCMeta):
 
         return self.render_standalone_response(request, fragment, **kwargs)
 
-    def render_standalone_response(self, request, fragment, **kwargs):  # pylint: disable=unused-argument
+    def render_standalone_response(self, request, fragment, **kwargs):
         """
         Renders a standalone page as a response for the specified fragment.
         """
@@ -37,7 +37,7 @@ class FragmentView(View, metaclass=ABCMeta):
         html = self.render_to_standalone_html(request, fragment, **kwargs)
         return HttpResponse(html)
 
-    def render_to_standalone_html(self, request, fragment, **kwargs):  # pylint: disable=unused-argument
+    def render_to_standalone_html(self, request, fragment, **kwargs):
         """
         Render the specified fragment to HTML for a standalone page.
         """
@@ -50,7 +50,7 @@ class FragmentView(View, metaclass=ABCMeta):
         return template.render(context)
 
     @abstractmethod
-    def render_to_fragment(self, request, **kwargs):  # pylint: disable=unused-argument
+    def render_to_fragment(self, request, **kwargs):
         """
         Render this view to a fragment.
         """
