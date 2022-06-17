@@ -6,7 +6,7 @@
 #
 asgiref==3.5.2
     # via django
-astroid==2.11.5
+astroid==2.11.6
     # via
     #   pylint
     #   pylint-celery
@@ -25,7 +25,7 @@ django==3.2.13
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/quality.in
-edx-lint==5.2.3
+edx-lint==5.2.4
     # via -r requirements/quality.in
 isort==5.10.1
     # via
@@ -47,7 +47,7 @@ pycodestyle==2.8.0
     # via -r requirements/quality.in
 pydocstyle==6.1.1
     # via -r requirements/quality.in
-pylint==2.14.1
+pylint==2.14.2
     # via
     #   edx-lint
     #   pylint-celery
