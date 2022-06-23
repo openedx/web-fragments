@@ -4,7 +4,6 @@
 
 diff-cover                # Changeset diff test coverage
 edx-i18n-tools            # For i18n_tool dummy
-pip-tools                 # Requirements file management
 pluggy
 tox
 tox-battery
