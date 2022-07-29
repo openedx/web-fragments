@@ -26,9 +26,9 @@ django==3.2.14
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/doc.in
-doc8==0.11.2
+doc8==1.0.0
     # via -r requirements/doc.in
-docutils==0.18.1
+docutils==0.19
     # via
     #   doc8
     #   readme-renderer
@@ -104,7 +104,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==5.0.2
+sphinx==5.1.1
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
@@ -126,11 +126,13 @@ sqlparse==0.4.2
     # via django
 stevedore==4.0.0
     # via doc8
+tomli==2.0.1
+    # via doc8
 twine==4.0.1
     # via -r requirements/doc.in
 typing-extensions==4.3.0
     # via rich
-urllib3==1.26.10
+urllib3==1.26.11
     # via
     #   requests
     #   twine
