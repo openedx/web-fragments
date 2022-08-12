@@ -50,7 +50,7 @@ edx-i18n-tools==0.9.1
     # via -r requirements/dev.in
 edx-lint==5.2.4
     # via -r requirements/quality.in
-filelock==3.7.1
+filelock==3.8.0
     # via
     #   tox
     #   virtualenv
@@ -72,7 +72,7 @@ jinja2==3.1.2
     # via
     #   code-annotations
     #   diff-cover
-keyring==23.7.0
+keyring==23.8.2
     # via twine
 lazy-object-proxy==1.7.1
     # via astroid
@@ -84,7 +84,7 @@ packaging==21.3
     # via tox
 path==16.4.0
     # via edx-i18n-tools
-pbr==5.9.0
+pbr==5.10.0
     # via stevedore
 pkginfo==1.8.3
     # via twine
@@ -130,13 +130,13 @@ pyparsing==3.0.9
     # via packaging
 python-slugify==6.1.2
     # via code-annotations
-pytz==2022.1
+pytz==2022.2
     # via django
 pyyaml==6.0
     # via
     #   code-annotations
     #   edx-i18n-tools
-readme-renderer==35.0
+readme-renderer==36.0
     # via twine
 requests==2.28.1
     # via
@@ -167,7 +167,7 @@ toml==0.10.2
     # via tox
 tomli==2.0.1
     # via pylint
-tomlkit==0.11.1
+tomlkit==0.11.3
     # via pylint
 tox==3.25.1
     # via
