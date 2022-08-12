@@ -51,13 +51,13 @@ jeepney==0.8.0
     #   secretstorage
 jinja2==3.1.2
     # via sphinx
-keyring==23.7.0
+keyring==23.8.2
     # via twine
 markupsafe==2.1.1
     # via jinja2
 packaging==21.3
     # via sphinx
-pbr==5.9.0
+pbr==5.10.0
     # via stevedore
 pkginfo==1.8.3
     # via twine
@@ -73,11 +73,11 @@ pygments==2.12.0
     #   sphinx
 pyparsing==3.0.9
     # via packaging
-pytz==2022.1
+pytz==2022.2
     # via
     #   babel
     #   django
-readme-renderer==35.0
+readme-renderer==36.0
     # via
     #   -r requirements/doc.in
     #   twine
