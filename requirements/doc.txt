@@ -12,7 +12,7 @@ babel==2.10.3
     # via sphinx
 bleach==5.0.1
     # via readme-renderer
-certifi==2022.9.14
+certifi==2022.9.24
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -45,7 +45,7 @@ importlib-metadata==4.12.0
     #   keyring
     #   sphinx
     #   twine
-jaraco-classes==3.2.2
+jaraco-classes==3.2.3
     # via keyring
 jeepney==0.8.0
     # via
@@ -81,7 +81,7 @@ pytz==2022.2.1
     # via
     #   babel
     #   django
-readme-renderer==37.1
+readme-renderer==37.2
     # via
     #   -r requirements/doc.in
     #   twine
@@ -108,7 +108,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==5.1.1
+sphinx==5.2.2
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
@@ -126,7 +126,7 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sqlparse==0.4.2
+sqlparse==0.4.3
     # via django
 stevedore==4.0.0
     # via doc8
