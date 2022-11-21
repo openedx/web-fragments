@@ -6,7 +6,7 @@
 #
 asgiref==3.5.2
     # via django
-astroid==2.12.12
+astroid==2.12.13
     # via
     #   pylint
     #   pylint-celery
@@ -33,7 +33,7 @@ commonmark==0.9.1
     # via rich
 cryptography==38.0.3
     # via secretstorage
-diff-cover==7.0.1
+diff-cover==7.0.2
     # via -r requirements/dev.in
 dill==0.3.6
     # via pylint
@@ -92,7 +92,7 @@ pbr==5.11.0
     # via stevedore
 pkginfo==1.8.3
     # via twine
-platformdirs==2.5.3
+platformdirs==2.5.4
     # via
     #   pylint
     #   virtualenv
@@ -116,7 +116,7 @@ pygments==2.13.0
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.15.5
+pylint==2.15.6
     # via
     #   edx-lint
     #   pylint-celery
@@ -132,7 +132,7 @@ pylint-plugin-utils==0.7
     #   pylint-django
 pyparsing==3.0.9
     # via packaging
-python-slugify==6.1.2
+python-slugify==7.0.0
     # via code-annotations
 pytz==2022.6
     # via django
@@ -173,7 +173,7 @@ tomli==2.0.1
     #   tox
 tomlkit==0.11.6
     # via pylint
-tox==3.27.0
+tox==3.27.1
     # via
     #   -r requirements/dev.in
     #   tox-battery
@@ -190,7 +190,7 @@ urllib3==1.26.12
     # via
     #   requests
     #   twine
-virtualenv==20.16.6
+virtualenv==20.16.7
     # via
     #   -r requirements/dev.in
     #   tox
