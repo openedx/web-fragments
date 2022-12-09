@@ -41,13 +41,13 @@ mccabe==0.7.0
     # via pylint
 pbr==5.11.0
     # via stevedore
-platformdirs==2.5.4
+platformdirs==2.6.0
     # via pylint
 pycodestyle==2.10.0
     # via -r requirements/quality.in
 pydocstyle==6.1.1
     # via -r requirements/quality.in
-pylint==2.15.7
+pylint==2.15.8
     # via
     #   edx-lint
     #   pylint-celery
