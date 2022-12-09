@@ -14,12 +14,10 @@ exceptiongroup==1.0.4
     # via pytest
 iniconfig==1.1.1
     # via pytest
-packaging==21.3
+packaging==22.0
     # via pytest
 pluggy==1.0.0
     # via pytest
-pyparsing==3.0.9
-    # via packaging
 pytest==7.2.0
     # via
     #   pytest-cov

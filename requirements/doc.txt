@@ -12,7 +12,7 @@ babel==2.11.0
     # via sphinx
 bleach==5.0.1
     # via readme-renderer
-certifi==2022.9.24
+certifi==2022.12.7
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -59,7 +59,7 @@ markupsafe==2.1.1
     # via jinja2
 more-itertools==9.0.0
     # via jaraco-classes
-packaging==21.3
+packaging==22.0
     # via sphinx
 pbr==5.11.0
     # via stevedore
@@ -75,8 +75,6 @@ pygments==2.13.0
     #   readme-renderer
     #   rich
     #   sphinx
-pyparsing==3.0.9
-    # via packaging
 pytz==2022.6
     # via
     #   babel
