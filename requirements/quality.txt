@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-asgiref==3.5.2
+asgiref==3.6.0
     # via django
 astroid==2.12.13
     # via
@@ -27,7 +27,7 @@ django==3.2.16
     #   -r requirements/quality.in
 edx-lint==5.3.0
     # via -r requirements/quality.in
-isort==5.10.1
+isort==5.11.4
     # via
     #   -r requirements/quality.in
     #   pylint
@@ -47,7 +47,7 @@ pycodestyle==2.10.0
     # via -r requirements/quality.in
 pydocstyle==6.1.1
     # via -r requirements/quality.in
-pylint==2.15.8
+pylint==2.15.9
     # via
     #   edx-lint
     #   pylint-celery
@@ -63,7 +63,7 @@ pylint-plugin-utils==0.7
     #   pylint-django
 python-slugify==7.0.0
     # via code-annotations
-pytz==2022.6
+pytz==2022.7
     # via django
 pyyaml==6.0
     # via code-annotations
