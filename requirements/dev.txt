@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-asgiref==3.5.2
+asgiref==3.6.0
     # via django
 astroid==2.12.13
     # via
@@ -33,7 +33,7 @@ commonmark==0.9.1
     # via rich
 cryptography==38.0.4
     # via secretstorage
-diff-cover==7.2.0
+diff-cover==7.3.0
     # via -r requirements/dev.in
 dill==0.3.6
     # via pylint
@@ -56,11 +56,13 @@ filelock==3.8.2
     #   virtualenv
 idna==3.4
     # via requests
-importlib-metadata==5.1.0
+importlib-metadata==5.2.0
     # via
     #   keyring
     #   twine
-isort==5.10.1
+importlib-resources==5.10.1
+    # via keyring
+isort==5.11.4
     # via
     #   -r requirements/quality.in
     #   pylint
@@ -74,7 +76,7 @@ jinja2==3.1.2
     # via
     #   code-annotations
     #   diff-cover
-keyring==23.11.0
+keyring==23.13.1
     # via twine
 lazy-object-proxy==1.8.0
     # via astroid
@@ -116,7 +118,7 @@ pygments==2.13.0
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.15.8
+pylint==2.15.9
     # via
     #   edx-lint
     #   pylint-celery
@@ -132,7 +134,7 @@ pylint-plugin-utils==0.7
     #   pylint-django
 python-slugify==7.0.0
     # via code-annotations
-pytz==2022.6
+pytz==2022.7
     # via django
 pyyaml==6.0
     # via
@@ -171,7 +173,7 @@ tomli==2.0.1
     #   tox
 tomlkit==0.11.6
     # via pylint
-tox==3.27.1
+tox==3.28.0
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/dev.in
@@ -200,4 +202,6 @@ wheel==0.38.4
 wrapt==1.14.1
     # via astroid
 zipp==3.11.0
-    # via importlib-metadata
+    # via
+    #   importlib-metadata
+    #   importlib-resources
