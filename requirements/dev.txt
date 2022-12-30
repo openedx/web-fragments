@@ -50,7 +50,7 @@ edx-i18n-tools==0.9.2
     # via -r requirements/dev.in
 edx-lint==5.3.0
     # via -r requirements/quality.in
-filelock==3.8.2
+filelock==3.9.0
     # via
     #   tox
     #   virtualenv
@@ -60,7 +60,7 @@ importlib-metadata==5.2.0
     # via
     #   keyring
     #   twine
-importlib-resources==5.10.1
+importlib-resources==5.10.2
     # via keyring
 isort==5.11.4
     # via
@@ -94,7 +94,7 @@ pbr==5.11.0
     # via stevedore
 pkginfo==1.9.2
     # via twine
-platformdirs==2.6.0
+platformdirs==2.6.2
     # via
     #   pylint
     #   virtualenv
