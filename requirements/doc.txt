@@ -20,13 +20,13 @@ charset-normalizer==2.1.1
     # via requests
 commonmark==0.9.1
     # via rich
-cryptography==38.0.4
+cryptography==39.0.0
     # via secretstorage
 django==3.2.16
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
-doc8==1.0.0
+doc8==1.1.1
     # via -r requirements/doc.in
 docutils==0.19
     # via
@@ -40,12 +40,12 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==5.2.0
+importlib-metadata==6.0.0
     # via
     #   keyring
     #   sphinx
     #   twine
-importlib-resources==5.10.1
+importlib-resources==5.10.2
     # via keyring
 jaraco-classes==3.2.3
     # via keyring
@@ -65,13 +65,13 @@ packaging==22.0
     # via sphinx
 pbr==5.11.0
     # via stevedore
-pkginfo==1.9.2
+pkginfo==1.9.4
     # via twine
 pockets==0.9.1
     # via sphinxcontrib-napoleon
 pycparser==2.21
     # via cffi
-pygments==2.13.0
+pygments==2.14.0
     # via
     #   doc8
     #   readme-renderer
@@ -96,7 +96,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==12.6.0
+rich==13.0.0
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -108,7 +108,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==5.3.0
+sphinx==6.1.1
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
