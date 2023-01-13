@@ -16,7 +16,7 @@ certifi==2022.12.7
     # via requests
 cffi==1.15.1
     # via cryptography
-charset-normalizer==2.1.1
+charset-normalizer==3.0.1
     # via requests
 commonmark==0.9.1
     # via rich
@@ -61,11 +61,11 @@ markupsafe==2.1.1
     # via jinja2
 more-itertools==9.0.0
     # via jaraco-classes
-packaging==22.0
+packaging==23.0
     # via sphinx
-pbr==5.11.0
+pbr==5.11.1
     # via stevedore
-pkginfo==1.9.4
+pkginfo==1.9.6
     # via twine
 pockets==0.9.1
     # via sphinxcontrib-napoleon
@@ -85,7 +85,7 @@ readme-renderer==37.3
     # via
     #   -r requirements/doc.in
     #   twine
-requests==2.28.1
+requests==2.28.2
     # via
     #   requests-toolbelt
     #   sphinx
@@ -96,7 +96,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==13.0.0
+rich==13.0.1
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -108,11 +108,12 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==6.1.1
+sphinx==5.3.0
     # via
+    #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
     #   edx-sphinx-theme
-sphinxcontrib-applehelp==1.0.2
+sphinxcontrib-applehelp==1.0.3
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
     # via sphinx
@@ -136,7 +137,7 @@ twine==4.0.2
     # via -r requirements/doc.in
 typing-extensions==4.4.0
     # via rich
-urllib3==1.26.13
+urllib3==1.26.14
     # via
     #   requests
     #   twine
