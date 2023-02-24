@@ -43,7 +43,7 @@ importlib-metadata==6.0.0
     #   keyring
     #   sphinx
     #   twine
-importlib-resources==5.10.2
+importlib-resources==5.12.0
     # via keyring
 jaraco-classes==3.2.3
     # via keyring
@@ -55,7 +55,7 @@ jinja2==3.1.2
     # via sphinx
 keyring==23.13.1
     # via twine
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
     # via rich
 markupsafe==2.1.2
     # via jinja2
@@ -145,7 +145,7 @@ urllib3==1.26.14
     #   twine
 webencodings==0.5.1
     # via bleach
-zipp==3.13.0
+zipp==3.14.0
     # via
     #   importlib-metadata
     #   importlib-resources
