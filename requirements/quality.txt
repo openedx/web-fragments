@@ -61,7 +61,7 @@ pylint-plugin-utils==0.7
     # via
     #   pylint-celery
     #   pylint-django
-python-slugify==8.0.0
+python-slugify==8.0.1
     # via code-annotations
 pytz==2022.7.1
     # via django
@@ -85,5 +85,5 @@ typing-extensions==4.5.0
     # via
     #   astroid
     #   pylint
-wrapt==1.14.1
+wrapt==1.15.0
     # via astroid
