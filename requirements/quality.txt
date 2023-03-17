@@ -25,7 +25,7 @@ django==3.2.18
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
-edx-lint==5.3.2
+edx-lint==5.3.4
     # via -r requirements/quality.in
 isort==5.12.0
     # via
@@ -41,7 +41,7 @@ mccabe==0.7.0
     # via pylint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.1.0
+platformdirs==3.1.1
     # via pylint
 pycodestyle==2.10.0
     # via -r requirements/quality.in
