@@ -66,12 +66,9 @@ Please see ``LICENSE.txt`` for details.
 How To Contribute
 -----------------
 
-Contributions are very welcome. Please read `Contributing to edX`_ for details.
+Contributions are very welcome. Please read `the Open edX Contributing Guide`_ for details.
 
-Note: Even though these guidelines were written with ``edx-platform`` in mind,
-they should be followed for Open edX code in general.
-
-.. _Contributing to edX: https://github.com/openedx/edx-platform/blob/master/CONTRIBUTING.rst
+.. _the Open edX Contributing Guide: https://github.com/openedx/.github/blob/master/CONTRIBUTING.md
 
 Reporting Security Issues
 -------------------------
