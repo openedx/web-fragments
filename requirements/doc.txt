@@ -43,7 +43,7 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==6.3.0
+importlib-metadata==6.5.0
     # via
     #   keyring
     #   sphinx
@@ -82,7 +82,7 @@ pycparser==2.21
     # via cffi
 pydata-sphinx-theme==0.13.3
     # via sphinx-book-theme
-pygments==2.15.0
+pygments==2.15.1
     # via
     #   accessible-pygments
     #   doc8
@@ -144,7 +144,7 @@ sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
-sqlparse==0.4.3
+sqlparse==0.4.4
     # via django
 stevedore==5.0.0
     # via doc8
