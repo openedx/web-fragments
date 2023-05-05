@@ -26,7 +26,7 @@ charset-normalizer==3.1.0
     # via requests
 cryptography==40.0.2
     # via secretstorage
-django==3.2.18
+django==3.2.19
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
@@ -98,12 +98,12 @@ readme-renderer==37.3
     # via
     #   -r requirements/doc.in
     #   twine
-requests==2.29.0
+requests==2.30.0
     # via
     #   requests-toolbelt
     #   sphinx
     #   twine
-requests-toolbelt==0.10.1
+requests-toolbelt==1.0.0
     # via twine
 restructuredtext-lint==1.4.0
     # via doc8
@@ -156,7 +156,7 @@ typing-extensions==4.5.0
     # via
     #   pydata-sphinx-theme
     #   rich
-urllib3==1.26.15
+urllib3==2.0.2
     # via
     #   requests
     #   twine

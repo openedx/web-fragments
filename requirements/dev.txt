@@ -37,7 +37,7 @@ dill==0.3.6
     # via pylint
 distlib==0.3.6
     # via virtualenv
-django==3.2.18
+django==3.2.19
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -144,11 +144,11 @@ pyyaml==6.0
     #   edx-i18n-tools
 readme-renderer==37.3
     # via twine
-requests==2.29.0
+requests==2.30.0
     # via
     #   requests-toolbelt
     #   twine
-requests-toolbelt==0.10.1
+requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
@@ -189,7 +189,7 @@ typing-extensions==4.5.0
     #   astroid
     #   pylint
     #   rich
-urllib3==1.26.15
+urllib3==2.0.2
     # via
     #   requests
     #   twine
