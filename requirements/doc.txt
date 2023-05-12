@@ -18,7 +18,7 @@ beautifulsoup4==4.12.2
     # via pydata-sphinx-theme
 bleach==6.0.0
     # via readme-renderer
-certifi==2022.12.7
+certifi==2023.5.7
     # via requests
 cffi==1.15.1
     # via cryptography
