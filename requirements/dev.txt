@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-asgiref==3.6.0
+asgiref==3.7.1
     # via django
 astroid==2.15.5
     # via
@@ -130,7 +130,7 @@ pylint-celery==0.3
     # via edx-lint
 pylint-django==2.5.3
     # via edx-lint
-pylint-plugin-utils==0.8.1
+pylint-plugin-utils==0.8.2
     # via
     #   pylint-celery
     #   pylint-django
@@ -144,7 +144,7 @@ pyyaml==6.0
     #   edx-i18n-tools
 readme-renderer==37.3
     # via twine
-requests==2.30.0
+requests==2.31.0
     # via
     #   requests-toolbelt
     #   twine
@@ -184,8 +184,9 @@ tox-battery==0.6.1
     # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/dev.in
-typing-extensions==4.5.0
+typing-extensions==4.6.2
     # via
+    #   asgiref
     #   astroid
     #   pylint
     #   rich
