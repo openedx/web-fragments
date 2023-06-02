@@ -8,7 +8,7 @@ accessible-pygments==0.0.4
     # via pydata-sphinx-theme
 alabaster==0.7.13
     # via sphinx
-asgiref==3.7.1
+asgiref==3.7.2
     # via django
 babel==2.12.1
     # via
@@ -24,7 +24,7 @@ cffi==1.15.1
     # via cryptography
 charset-normalizer==3.1.0
     # via requests
-cryptography==40.0.2
+cryptography==41.0.1
     # via secretstorage
 django==3.2.19
     # via
@@ -109,7 +109,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==13.3.5
+rich==13.4.1
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -152,7 +152,7 @@ tomli==2.0.1
     # via doc8
 twine==4.0.2
     # via -r requirements/doc.in
-typing-extensions==4.6.2
+typing-extensions==4.6.3
     # via
     #   asgiref
     #   pydata-sphinx-theme

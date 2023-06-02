@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-asgiref==3.7.1
+asgiref==3.7.2
     # via django
 astroid==2.15.5
     # via
@@ -81,7 +81,7 @@ tomli==2.0.1
     # via pylint
 tomlkit==0.11.8
     # via pylint
-typing-extensions==4.6.2
+typing-extensions==4.6.3
     # via
     #   asgiref
     #   astroid
