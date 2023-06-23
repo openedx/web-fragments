@@ -43,7 +43,7 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==6.6.0
+importlib-metadata==6.7.0
     # via
     #   keyring
     #   sphinx
@@ -58,7 +58,7 @@ jeepney==0.8.0
     #   secretstorage
 jinja2==3.1.2
     # via sphinx
-keyring==23.13.1
+keyring==24.1.0
     # via twine
 markdown-it-py==3.0.0
     # via rich
@@ -94,7 +94,7 @@ pytz==2023.3
     # via
     #   babel
     #   django
-readme-renderer==37.3
+readme-renderer==40.0
     # via
     #   -r requirements/doc.in
     #   twine
@@ -122,9 +122,8 @@ snowballstemmer==2.2.0
     # via sphinx
 soupsieve==2.4.1
     # via beautifulsoup4
-sphinx==5.3.0
+sphinx==6.2.1
     # via
-    #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
