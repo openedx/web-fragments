@@ -58,7 +58,7 @@ jeepney==0.8.0
     #   secretstorage
 jinja2==3.1.2
     # via sphinx
-keyring==24.1.0
+keyring==24.2.0
     # via twine
 markdown-it-py==3.0.0
     # via rich
@@ -151,7 +151,7 @@ tomli==2.0.1
     # via doc8
 twine==4.0.2
     # via -r requirements/doc.in
-typing-extensions==4.6.3
+typing-extensions==4.7.0
     # via
     #   asgiref
     #   pydata-sphinx-theme
