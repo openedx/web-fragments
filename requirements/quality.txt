@@ -6,11 +6,11 @@
 #
 asgiref==3.7.2
     # via django
-astroid==2.15.5
+astroid==2.15.6
     # via
     #   pylint
     #   pylint-celery
-click==8.1.4
+click==8.1.5
     # via
     #   click-log
     #   code-annotations
