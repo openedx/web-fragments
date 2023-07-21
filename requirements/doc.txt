@@ -156,13 +156,13 @@ typing-extensions==4.7.1
     #   asgiref
     #   pydata-sphinx-theme
     #   rich
-urllib3==2.0.3
+urllib3==2.0.4
     # via
     #   requests
     #   twine
 webencodings==0.5.1
     # via bleach
-zipp==3.16.1
+zipp==3.16.2
     # via
     #   importlib-metadata
     #   importlib-resources
