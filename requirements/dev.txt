@@ -12,43 +12,43 @@ astroid==2.15.6
     #   pylint-celery
 bleach==6.0.0
     # via readme-renderer
-certifi==2023.5.7
+certifi==2023.7.22
     # via requests
 cffi==1.15.1
     # via cryptography
-chardet==5.1.0
+chardet==5.2.0
     # via diff-cover
 charset-normalizer==3.2.0
     # via requests
-click==8.1.5
+click==8.1.7
     # via
     #   click-log
     #   code-annotations
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.3.0
+code-annotations==1.5.0
     # via edx-lint
-cryptography==41.0.2
+cryptography==41.0.3
     # via secretstorage
-diff-cover==7.6.1
+diff-cover==7.7.0
     # via -r requirements/dev.in
-dill==0.3.6
+dill==0.3.7
     # via pylint
-distlib==0.3.6
+distlib==0.3.7
     # via virtualenv
-django==3.2.20
+django==3.2.21
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
     #   edx-i18n-tools
 docutils==0.20.1
     # via readme-renderer
-edx-i18n-tools==1.0.0
+edx-i18n-tools==1.1.0
     # via -r requirements/dev.in
 edx-lint==5.3.4
     # via -r requirements/quality.in
-filelock==3.12.2
+filelock==3.12.3
     # via
     #   tox
     #   virtualenv
@@ -58,7 +58,7 @@ importlib-metadata==6.8.0
     # via
     #   keyring
     #   twine
-importlib-resources==6.0.0
+importlib-resources==6.0.1
     # via keyring
 isort==5.12.0
     # via
@@ -86,7 +86,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==9.1.0
+more-itertools==10.1.0
     # via jaraco-classes
 packaging==23.1
     # via tox
@@ -96,11 +96,11 @@ pbr==5.11.1
     # via stevedore
 pkginfo==1.9.6
     # via twine
-platformdirs==3.8.1
+platformdirs==3.10.0
     # via
     #   pylint
     #   virtualenv
-pluggy==1.2.0
+pluggy==1.3.0
     # via
     #   -r requirements/dev.in
     #   diff-cover
@@ -109,18 +109,18 @@ polib==1.2.0
     # via edx-i18n-tools
 py==1.11.0
     # via tox
-pycodestyle==2.10.0
+pycodestyle==2.11.0
     # via -r requirements/quality.in
 pycparser==2.21
     # via cffi
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pygments==2.15.1
+pygments==2.16.1
     # via
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.17.4
+pylint==2.17.5
     # via
     #   edx-lint
     #   pylint-celery
@@ -136,13 +136,13 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 python-slugify==8.0.1
     # via code-annotations
-pytz==2023.3
+pytz==2023.3.post1
     # via django
-pyyaml==6.0
+pyyaml==6.0.1
     # via
     #   code-annotations
     #   edx-i18n-tools
-readme-renderer==40.0
+readme-renderer==41.0
     # via twine
 requests==2.31.0
     # via
@@ -152,7 +152,7 @@ requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==13.4.2
+rich==13.5.2
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -173,14 +173,14 @@ tomli==2.0.1
     # via
     #   pylint
     #   tox
-tomlkit==0.11.8
+tomlkit==0.12.1
     # via pylint
 tox==3.28.0
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/dev.in
     #   tox-battery
-tox-battery==0.6.1
+tox-battery==0.6.2
     # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/dev.in
@@ -188,23 +188,24 @@ typing-extensions==4.7.1
     # via
     #   asgiref
     #   astroid
+    #   filelock
     #   pylint
     #   rich
-urllib3==2.0.3
+urllib3==2.0.4
     # via
     #   requests
     #   twine
-virtualenv==20.23.1
+virtualenv==20.24.4
     # via
     #   -r requirements/dev.in
     #   tox
 webencodings==0.5.1
     # via bleach
-wheel==0.40.0
+wheel==0.41.2
     # via -r requirements/dev.in
 wrapt==1.15.0
     # via astroid
-zipp==3.16.1
+zipp==3.16.2
     # via
     #   importlib-metadata
     #   importlib-resources
