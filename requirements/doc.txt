@@ -16,8 +16,6 @@ babel==2.12.1
     #   sphinx
 beautifulsoup4==4.12.2
     # via pydata-sphinx-theme
-bleach==6.0.0
-    # via readme-renderer
 certifi==2023.7.22
     # via requests
 cffi==1.15.1
@@ -68,6 +66,8 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.1.0
     # via jaraco-classes
+nh3==0.2.14
+    # via readme-renderer
 packaging==23.1
     # via
     #   pydata-sphinx-theme
@@ -94,7 +94,7 @@ pytz==2023.3.post1
     # via
     #   babel
     #   django
-readme-renderer==41.0
+readme-renderer==42.0
     # via
     #   -r requirements/doc.in
     #   twine
@@ -115,7 +115,6 @@ secretstorage==3.3.3
     # via keyring
 six==1.16.0
     # via
-    #   bleach
     #   pockets
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
@@ -160,8 +159,6 @@ urllib3==2.0.4
     # via
     #   requests
     #   twine
-webencodings==0.5.1
-    # via bleach
 zipp==3.16.2
     # via
     #   importlib-metadata
