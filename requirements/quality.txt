@@ -81,7 +81,7 @@ tomli==2.0.1
     # via pylint
 tomlkit==0.12.1
     # via pylint
-typing-extensions==4.7.1
+typing-extensions==4.8.0
     # via
     #   asgiref
     #   astroid
