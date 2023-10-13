@@ -6,17 +6,17 @@
 #
 asgiref==3.7.2
     # via django
-astroid==2.15.6
+astroid==2.15.8
     # via
     #   pylint
     #   pylint-celery
 certifi==2023.7.22
     # via requests
-cffi==1.15.1
+cffi==1.16.0
     # via cryptography
 chardet==5.2.0
     # via diff-cover
-charset-normalizer==3.2.0
+charset-normalizer==3.3.0
     # via requests
 click==8.1.7
     # via
@@ -35,14 +35,14 @@ dill==0.3.7
     # via pylint
 distlib==0.3.7
     # via virtualenv
-django==3.2.21
+django==3.2.22
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
     #   edx-i18n-tools
 docutils==0.20.1
     # via readme-renderer
-edx-i18n-tools==1.2.0
+edx-i18n-tools==1.3.0
     # via -r requirements/dev.in
 edx-lint==5.3.4
     # via -r requirements/quality.in
@@ -76,6 +76,8 @@ keyring==24.2.0
     # via twine
 lazy-object-proxy==1.9.0
     # via astroid
+lxml==4.9.3
+    # via edx-i18n-tools
 markdown-it-py==3.0.0
     # via rich
 markupsafe==2.1.3
@@ -88,7 +90,7 @@ more-itertools==10.1.0
     # via jaraco-classes
 nh3==0.2.14
     # via readme-renderer
-packaging==23.1
+packaging==23.2
     # via tox
 path==16.7.1
     # via edx-i18n-tools
@@ -96,7 +98,7 @@ pbr==5.11.1
     # via stevedore
 pkginfo==1.9.6
     # via twine
-platformdirs==3.10.0
+platformdirs==3.11.0
     # via
     #   pylint
     #   virtualenv
@@ -109,7 +111,7 @@ polib==1.2.0
     # via edx-i18n-tools
 py==1.11.0
     # via tox
-pycodestyle==2.11.0
+pycodestyle==2.11.1
     # via -r requirements/quality.in
 pycparser==2.21
     # via cffi
@@ -120,7 +122,7 @@ pygments==2.16.1
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.17.5
+pylint==2.17.7
     # via
     #   edx-lint
     #   pylint-celery
@@ -152,7 +154,7 @@ requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==13.5.3
+rich==13.6.0
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -189,7 +191,7 @@ typing-extensions==4.8.0
     #   astroid
     #   pylint
     #   rich
-urllib3==2.0.5
+urllib3==2.0.6
     # via
     #   requests
     #   twine

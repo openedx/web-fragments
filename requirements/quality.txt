@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-astroid==2.15.6
+astroid==2.15.8
     # via
     #   pylint
     #   pylint-celery
@@ -21,7 +21,7 @@ code-annotations==1.5.0
     # via edx-lint
 dill==0.3.7
     # via pylint
-django==3.2.21
+django==3.2.22
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -41,13 +41,13 @@ mccabe==0.7.0
     # via pylint
 pbr==5.11.1
     # via stevedore
-platformdirs==3.10.0
+platformdirs==3.11.0
     # via pylint
-pycodestyle==2.11.0
+pycodestyle==2.11.1
     # via -r requirements/quality.in
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pylint==2.17.5
+pylint==2.17.7
     # via
     #   edx-lint
     #   pylint-celery
