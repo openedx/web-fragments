@@ -29,7 +29,7 @@ code-annotations==1.5.0
     # via edx-lint
 cryptography==41.0.4
     # via secretstorage
-diff-cover==7.7.0
+diff-cover==8.0.0
     # via -r requirements/dev.in
 dill==0.3.7
     # via pylint
@@ -191,7 +191,7 @@ typing-extensions==4.8.0
     #   astroid
     #   pylint
     #   rich
-urllib3==2.0.6
+urllib3==2.0.7
     # via
     #   requests
     #   twine
