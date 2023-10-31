@@ -73,7 +73,7 @@ Contributions are very welcome. Please read `the Open edX Contributing Guide`_ f
 Reporting Security Issues
 -------------------------
 
-Please do not report security issues in public. Please email security@edx.org.
+Please do not report security issues in public. Please email security@openedx.org.
 
 Getting Help
 ------------
