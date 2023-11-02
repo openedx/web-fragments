@@ -21,15 +21,15 @@ code-annotations==1.5.0
     # via edx-lint
 dill==0.3.7
     # via pylint
-django==3.2.22
+django==3.2.23
     # via
-    #   -c requirements/common_constraints.txt
-    #   -r requirements/quality.in
+    #   -c common_constraints.txt
+    #   -r quality.in
 edx-lint==5.3.4
-    # via -r requirements/quality.in
+    # via -r quality.in
 isort==5.12.0
     # via
-    #   -r requirements/quality.in
+    #   -r quality.in
     #   pylint
 jinja2==3.1.2
     # via code-annotations
@@ -44,9 +44,9 @@ pbr==5.11.1
 platformdirs==3.11.0
     # via pylint
 pycodestyle==2.11.1
-    # via -r requirements/quality.in
+    # via -r quality.in
 pydocstyle==6.3.0
-    # via -r requirements/quality.in
+    # via -r quality.in
 pylint==2.17.7
     # via
     #   edx-lint
