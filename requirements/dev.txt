@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-astroid==2.15.8
+astroid==3.0.1
     # via
     #   pylint
     #   pylint-celery
@@ -16,7 +16,7 @@ cffi==1.16.0
     # via cryptography
 chardet==5.2.0
     # via diff-cover
-charset-normalizer==3.3.0
+charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via
@@ -27,15 +27,15 @@ click-log==0.4.0
     # via edx-lint
 code-annotations==1.5.0
     # via edx-lint
-cryptography==41.0.4
+cryptography==41.0.5
     # via secretstorage
-diff-cover==7.7.0
+diff-cover==8.0.0
     # via -r requirements/dev.in
 dill==0.3.7
     # via pylint
 distlib==0.3.7
     # via virtualenv
-django==3.2.22
+django==3.2.23
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -44,9 +44,9 @@ docutils==0.20.1
     # via readme-renderer
 edx-i18n-tools==1.3.0
     # via -r requirements/dev.in
-edx-lint==5.3.4
+edx-lint==5.3.6
     # via -r requirements/quality.in
-filelock==3.12.4
+filelock==3.13.1
     # via
     #   tox
     #   virtualenv
@@ -74,8 +74,6 @@ jinja2==3.1.2
     #   diff-cover
 keyring==24.2.0
     # via twine
-lazy-object-proxy==1.9.0
-    # via astroid
 lxml==4.9.3
     # via edx-i18n-tools
 markdown-it-py==3.0.0
@@ -122,7 +120,7 @@ pygments==2.16.1
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.17.7
+pylint==3.0.2
     # via
     #   edx-lint
     #   pylint-celery
@@ -130,7 +128,7 @@ pylint==2.17.7
     #   pylint-plugin-utils
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.5.3
+pylint-django==2.5.5
     # via edx-lint
 pylint-plugin-utils==0.8.2
     # via
@@ -174,7 +172,7 @@ tomli==2.0.1
     # via
     #   pylint
     #   tox
-tomlkit==0.12.1
+tomlkit==0.12.2
     # via pylint
 tox==3.28.0
     # via
@@ -191,18 +189,16 @@ typing-extensions==4.8.0
     #   astroid
     #   pylint
     #   rich
-urllib3==2.0.6
+urllib3==2.0.7
     # via
     #   requests
     #   twine
-virtualenv==20.24.5
+virtualenv==20.24.6
     # via
     #   -r requirements/dev.in
     #   tox
-wheel==0.41.2
+wheel==0.41.3
     # via -r requirements/dev.in
-wrapt==1.15.0
-    # via astroid
 zipp==3.17.0
     # via
     #   importlib-metadata
