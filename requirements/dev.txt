@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-astroid==2.15.8
+astroid==3.0.1
     # via
     #   pylint
     #   pylint-celery
@@ -16,7 +16,7 @@ cffi==1.16.0
     # via cryptography
 chardet==5.2.0
     # via diff-cover
-charset-normalizer==3.3.0
+charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via
@@ -27,15 +27,15 @@ click-log==0.4.0
     # via edx-lint
 code-annotations==1.5.0
     # via edx-lint
-cryptography==41.0.4
+cryptography==41.0.5
     # via secretstorage
-diff-cover==7.7.0
+diff-cover==8.0.1
     # via -r requirements/dev.in
 dill==0.3.7
     # via pylint
 distlib==0.3.7
     # via virtualenv
-django==3.2.22
+django==3.2.23
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -44,9 +44,9 @@ docutils==0.20.1
     # via readme-renderer
 edx-i18n-tools==1.3.0
     # via -r requirements/dev.in
-edx-lint==5.3.4
+edx-lint==5.3.6
     # via -r requirements/quality.in
-filelock==3.12.4
+filelock==3.13.1
     # via
     #   tox
     #   virtualenv
@@ -56,7 +56,7 @@ importlib-metadata==6.8.0
     # via
     #   keyring
     #   twine
-importlib-resources==6.1.0
+importlib-resources==6.1.1
     # via keyring
 isort==5.12.0
     # via
@@ -72,10 +72,8 @@ jinja2==3.1.2
     # via
     #   code-annotations
     #   diff-cover
-keyring==24.2.0
+keyring==24.3.0
     # via twine
-lazy-object-proxy==1.9.0
-    # via astroid
 lxml==4.9.3
     # via edx-i18n-tools
 markdown-it-py==3.0.0
@@ -91,16 +89,20 @@ more-itertools==10.1.0
 nh3==0.2.14
     # via readme-renderer
 packaging==23.2
-    # via tox
+    # via
+    #   pyproject-api
+    #   tox
 path==16.7.1
     # via edx-i18n-tools
-pbr==5.11.1
+pbr==6.0.0
     # via stevedore
 pkginfo==1.9.6
     # via twine
 platformdirs==3.11.0
     # via
+    #   -c requirements/common_constraints.txt
     #   pylint
+    #   tox
     #   virtualenv
 pluggy==1.3.0
     # via
@@ -122,7 +124,7 @@ pygments==2.16.1
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.17.7
+pylint==3.0.2
     # via
     #   edx-lint
     #   pylint-celery
@@ -130,7 +132,7 @@ pylint==2.17.7
     #   pylint-plugin-utils
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.5.3
+pylint-django==2.5.5
     # via edx-lint
 pylint-plugin-utils==0.8.2
     # via
@@ -154,7 +156,7 @@ requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==13.6.0
+rich==13.7.0
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -173,12 +175,12 @@ text-unidecode==1.3
 tomli==2.0.1
     # via
     #   pylint
+    #   pyproject-api
     #   tox
-tomlkit==0.12.1
+tomlkit==0.12.3
     # via pylint
 tox==3.28.0
     # via
-    #   -c requirements/common_constraints.txt
     #   -r requirements/dev.in
     #   tox-battery
 tox-battery==0.6.2
@@ -191,18 +193,16 @@ typing-extensions==4.8.0
     #   astroid
     #   pylint
     #   rich
-urllib3==2.0.6
+urllib3==2.1.0
     # via
     #   requests
     #   twine
-virtualenv==20.24.5
+virtualenv==20.24.6
     # via
     #   -r requirements/dev.in
     #   tox
-wheel==0.41.2
+wheel==0.41.3
     # via -r requirements/dev.in
-wrapt==1.15.0
-    # via astroid
 zipp==3.17.0
     # via
     #   importlib-metadata
