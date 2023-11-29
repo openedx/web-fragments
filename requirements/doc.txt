@@ -22,14 +22,14 @@ cffi==1.16.0
     # via cryptography
 charset-normalizer==3.3.2
     # via requests
-cryptography==41.0.5
+cryptography==41.0.6
     # via secretstorage
 django==3.2.23
     # via
-    #   -c requirements/common_constraints.txt
-    #   -r requirements/doc.in
+    #   -c common_constraints.txt
+    #   -r doc.in
 doc8==1.1.1
-    # via -r requirements/doc.in
+    # via -r doc.in
 docutils==0.19
     # via
     #   doc8
@@ -96,7 +96,7 @@ pytz==2023.3.post1
     #   django
 readme-renderer==42.0
     # via
-    #   -r requirements/doc.in
+    #   -r doc.in
     #   twine
 requests==2.31.0
     # via
@@ -123,11 +123,11 @@ soupsieve==2.5
     # via beautifulsoup4
 sphinx==6.2.1
     # via
-    #   -r requirements/doc.in
+    #   -r doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
 sphinx-book-theme==1.0.1
-    # via -r requirements/doc.in
+    # via -r doc.in
 sphinxcontrib-applehelp==1.0.4
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
@@ -137,7 +137,7 @@ sphinxcontrib-htmlhelp==2.0.1
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-napoleon==0.7
-    # via -r requirements/doc.in
+    # via -r doc.in
 sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
@@ -149,7 +149,7 @@ stevedore==5.1.0
 tomli==2.0.1
     # via doc8
 twine==4.0.2
-    # via -r requirements/doc.in
+    # via -r doc.in
 typing-extensions==4.8.0
     # via
     #   asgiref
