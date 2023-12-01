@@ -10,7 +10,7 @@ astroid==3.0.1
     # via
     #   pylint
     #   pylint-celery
-certifi==2023.7.22
+certifi==2023.11.17
     # via requests
 cffi==1.16.0
     # via cryptography
@@ -27,7 +27,7 @@ click-log==0.4.0
     # via edx-lint
 code-annotations==1.5.0
     # via edx-lint
-cryptography==41.0.5
+cryptography==41.0.7
     # via secretstorage
 diff-cover==8.0.1
     # via -r requirements/dev.in
@@ -50,7 +50,7 @@ filelock==3.13.1
     # via
     #   tox
     #   virtualenv
-idna==3.4
+idna==3.6
     # via requests
 importlib-metadata==6.8.0
     # via
@@ -119,7 +119,7 @@ pycparser==2.21
     # via cffi
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pygments==2.16.1
+pygments==2.17.2
     # via
     #   diff-cover
     #   readme-renderer
@@ -197,11 +197,11 @@ urllib3==2.1.0
     # via
     #   requests
     #   twine
-virtualenv==20.24.6
+virtualenv==20.24.7
     # via
     #   -r requirements/dev.in
     #   tox
-wheel==0.41.3
+wheel==0.42.0
     # via -r requirements/dev.in
 zipp==3.17.0
     # via
