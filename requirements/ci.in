@@ -5,5 +5,4 @@
 
 pluggy
 tox
-tox-battery
 virtualenv
