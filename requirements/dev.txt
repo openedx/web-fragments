@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-astroid==3.0.1
+astroid==3.0.2
     # via
     #   pylint
     #   pylint-celery
@@ -14,6 +14,8 @@ cachetools==5.3.2
     # via tox
 certifi==2023.11.17
     # via requests
+cffi==1.16.0
+    # via cryptography
 chardet==5.2.0
     # via
     #   diff-cover
@@ -31,11 +33,13 @@ code-annotations==1.5.0
     # via edx-lint
 colorama==0.4.6
     # via tox
+cryptography==41.0.7
+    # via secretstorage
 diff-cover==8.0.1
     # via -r requirements/dev.in
 dill==0.3.7
     # via pylint
-distlib==0.3.7
+distlib==0.3.8
     # via virtualenv
 django==3.2.23
     # via
@@ -60,12 +64,16 @@ importlib-metadata==7.0.0
     #   twine
 importlib-resources==6.1.1
     # via keyring
-isort==5.12.0
+isort==5.13.2
     # via
     #   -r requirements/quality.in
     #   pylint
 jaraco-classes==3.3.0
     # via keyring
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.2
     # via
     #   code-annotations
@@ -110,6 +118,8 @@ polib==1.2.0
     # via edx-i18n-tools
 pycodestyle==2.11.1
     # via -r requirements/quality.in
+pycparser==2.21
+    # via cffi
 pydocstyle==6.3.0
     # via -r requirements/quality.in
 pygments==2.17.2
@@ -117,7 +127,7 @@ pygments==2.17.2
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==3.0.2
+pylint==3.0.3
     # via
     #   edx-lint
     #   pylint-celery
@@ -153,6 +163,8 @@ rfc3986==2.0.0
     # via twine
 rich==13.7.0
     # via twine
+secretstorage==3.3.3
+    # via keyring
 six==1.16.0
     # via edx-lint
 snowballstemmer==2.2.0
@@ -174,7 +186,7 @@ tox==4.11.4
     # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/dev.in
-typing-extensions==4.8.0
+typing-extensions==4.9.0
     # via
     #   asgiref
     #   astroid

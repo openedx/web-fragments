@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-astroid==3.0.1
+astroid==3.0.2
     # via
     #   pylint
     #   pylint-celery
@@ -27,7 +27,7 @@ django==3.2.23
     #   -r requirements/quality.in
 edx-lint==5.3.6
     # via -r requirements/quality.in
-isort==5.12.0
+isort==5.13.2
     # via
     #   -r requirements/quality.in
     #   pylint
@@ -45,7 +45,7 @@ pycodestyle==2.11.1
     # via -r requirements/quality.in
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pylint==3.0.2
+pylint==3.0.3
     # via
     #   edx-lint
     #   pylint-celery
@@ -79,7 +79,7 @@ tomli==2.0.1
     # via pylint
 tomlkit==0.12.3
     # via pylint
-typing-extensions==4.8.0
+typing-extensions==4.9.0
     # via
     #   asgiref
     #   astroid
