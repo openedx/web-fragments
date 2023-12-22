@@ -35,7 +35,7 @@ colorama==0.4.6
     # via tox
 cryptography==41.0.7
     # via secretstorage
-diff-cover==8.0.1
+diff-cover==8.0.2
     # via -r requirements/dev.in
 dill==0.3.7
     # via pylint
@@ -80,7 +80,7 @@ jinja2==3.1.2
     #   diff-cover
 keyring==24.3.0
     # via twine
-lxml==4.9.3
+lxml==4.9.4
     # via edx-i18n-tools
 markdown-it-py==3.0.0
     # via rich

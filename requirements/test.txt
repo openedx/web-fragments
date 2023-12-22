@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-coverage[toml]==7.3.3
+coverage[toml]==7.3.4
     # via
     #   coverage
     #   pytest-cov
