@@ -4,7 +4,7 @@ Python representation of a web fragment.
 
 from collections import namedtuple
 
-FragmentResource = namedtuple("FragmentResource", "kind, data, mimetype, placement")  # pylint: disable=C0103
+FragmentResource = namedtuple("FragmentResource", "kind, data, mimetype, placement")
 
 JS_API_VERSION = 1
 
@@ -53,7 +53,7 @@ class Fragment:
         """
         return {
             'content': self.content,
-            'resources': [r._asdict() for r in self.resources],  # pylint: disable=W0212
+            'resources': [r._asdict() for r in self.resources],
             'js_init_fn': self.js_init_fn,
             'js_init_version': self.js_init_version,
             'json_init_args': self.json_init_args
@@ -66,7 +66,7 @@ class Fragment:
         """
         frag = cls()
         frag.content = pods['content']
-        frag._resources = [FragmentResource(**d) for d in pods['resources']]  # pylint: disable=protected-access
+        frag._resources = [FragmentResource(**d) for d in pods['resources']]
         frag.js_init_fn = pods['js_init_fn']
         frag.js_init_version = pods['js_init_version']
         frag.json_init_args = pods['json_init_args']

@@ -14,12 +14,11 @@ jobs:
       matrix:
         os: [ubuntu-20.04]
         python-version: ['3.8']
-        toxenv: [django30, django31, django32, docs, quality, check_keywords]
-
+        toxenv: [django32, django42, docs, quality, check_keywords]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -33,3 +32,11 @@ jobs:
         env:
           TOXENV: ${{ matrix.toxenv }}
         run: tox
+
+      - name: Run coverage
+        if: matrix.python-version == '3.8' && matrix.toxenv == 'django42'
+        uses: codecov/codecov-action@v3
+        with:
+          flags: unittests
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true

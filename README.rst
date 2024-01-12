@@ -5,8 +5,8 @@ web-fragments
     :target: https://pypi.python.org/pypi/web-fragments/
     :alt: PyPI
 
-.. image:: https://github.com/edx/web-fragments/workflows/Python%20CI/badge.svg?branch=master
-    :target: https://github.com/edx/web-fragments/actions?query=workflow%3A%22Python+CI%22
+.. image:: https://github.com/openedx/web-fragments/workflows/Python%20CI/badge.svg?branch=master
+    :target: https://github.com/openedx/web-fragments/actions?query=workflow%3A%22Python+CI%22
     :alt: CI
 
 .. image:: http://codecov.io/github/edx/web-fragments/coverage.svg?branch=master
@@ -22,7 +22,7 @@ web-fragments
     :alt: Supported Python versions
 
 .. image:: https://img.shields.io/github/license/edx/web-fragments.svg
-    :target: https://github.com/edx/web-fragments/blob/master/LICENSE.txt
+    :target: https://github.com/openedx/web-fragments/blob/master/LICENSE.txt
     :alt: License
 
 Overview
@@ -66,17 +66,14 @@ Please see ``LICENSE.txt`` for details.
 How To Contribute
 -----------------
 
-Contributions are very welcome. Please read `Contributing to edX`_ for details.
+Contributions are very welcome. Please read `the Open edX Contributing Guide`_ for details.
 
-Note: Even though these guidelines were written with ``edx-platform`` in mind,
-they should be followed for Open edX code in general.
-
-.. _Contributing to edX: https://github.com/edx/edx-platform/blob/master/CONTRIBUTING.rst
+.. _the Open edX Contributing Guide: https://github.com/openedx/.github/blob/master/CONTRIBUTING.md
 
 Reporting Security Issues
 -------------------------
 
-Please do not report security issues in public. Please email security@edx.org.
+Please do not report security issues in public. Please email security@openedx.org.
 
 Getting Help
 ------------
