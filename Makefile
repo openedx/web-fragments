@@ -1,4 +1,4 @@
-.PHONY: clean coverage docs help quality requirements test test-all upgrade
+.PHONY: clean coverage docs help quality requirements test test-all upgrade check_keywords
 
 .DEFAULT_GOAL := help
 
@@ -75,3 +75,6 @@ diff_cover: test
 test-all: ## run tests on every supported Python/Django combination
 	tox -e quality
 	tox
+
+check_keywords: ## Scan the Django models in all installed apps in this project for restricted field names
+	python manage.py check_reserved_keywords --override_file db_keyword_overrides.yml
