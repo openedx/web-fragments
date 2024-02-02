@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-coverage[toml]==7.4.0
+coverage[toml]==7.4.1
     # via
     #   coverage
     #   pytest-cov
@@ -18,13 +18,13 @@ packaging==23.2
     # via pytest
 pluggy==1.4.0
     # via pytest
-pytest==7.4.4
+pytest==8.0.0
     # via
     #   pytest-cov
     #   pytest-django
 pytest-cov==4.1.0
     # via -r requirements/test.in
-pytest-django==4.7.0
+pytest-django==4.8.0
     # via -r requirements/test.in
 tomli==2.0.1
     # via

@@ -12,7 +12,7 @@ astroid==3.0.2
     #   pylint-celery
 cachetools==5.3.2
     # via tox
-certifi==2023.11.17
+certifi==2024.2.2
     # via requests
 cffi==1.16.0
     # via cryptography
@@ -29,15 +29,15 @@ click==8.1.7
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.5.0
+code-annotations==1.6.0
     # via edx-lint
 colorama==0.4.6
     # via tox
-cryptography==42.0.1
+cryptography==42.0.2
     # via secretstorage
 diff-cover==8.0.3
     # via -r requirements/dev.in
-dill==0.3.7
+dill==0.3.8
     # via pylint
 distlib==0.3.8
     # via virtualenv
@@ -104,7 +104,7 @@ pbr==6.0.0
     # via stevedore
 pkginfo==1.9.6
     # via twine
-platformdirs==4.1.0
+platformdirs==4.2.0
     # via
     #   pylint
     #   tox
@@ -143,9 +143,9 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 pyproject-api==1.6.1
     # via tox
-python-slugify==8.0.2
+python-slugify==8.0.3
     # via code-annotations
-pytz==2023.3.post1
+pytz==2024.1
     # via django
 pyyaml==6.0.1
     # via
@@ -192,7 +192,7 @@ typing-extensions==4.9.0
     #   astroid
     #   pylint
     #   rich
-urllib3==2.1.0
+urllib3==2.2.0
     # via
     #   requests
     #   twine
