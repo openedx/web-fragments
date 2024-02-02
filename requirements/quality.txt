@@ -17,9 +17,9 @@ click==8.1.7
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.5.0
+code-annotations==1.6.0
     # via edx-lint
-dill==0.3.7
+dill==0.3.8
     # via pylint
 django==3.2.23
     # via
@@ -39,7 +39,7 @@ mccabe==0.7.0
     # via pylint
 pbr==6.0.0
     # via stevedore
-platformdirs==4.1.0
+platformdirs==4.2.0
     # via pylint
 pycodestyle==2.11.1
     # via -r requirements/quality.in
@@ -59,9 +59,9 @@ pylint-plugin-utils==0.8.2
     # via
     #   pylint-celery
     #   pylint-django
-python-slugify==8.0.2
+python-slugify==8.0.3
     # via code-annotations
-pytz==2023.3.post1
+pytz==2024.1
     # via django
 pyyaml==6.0.1
     # via code-annotations
