@@ -6,7 +6,7 @@
 #
 asgiref==3.7.2
     # via django
-astroid==3.0.2
+astroid==3.0.3
     # via
     #   pylint
     #   pylint-celery
@@ -41,7 +41,7 @@ dill==0.3.8
     # via pylint
 distlib==0.3.8
     # via virtualenv
-django==3.2.23
+django==3.2.24
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -68,7 +68,7 @@ isort==5.13.2
     # via
     #   -r requirements/quality.in
     #   pylint
-jaraco-classes==3.3.0
+jaraco-classes==3.3.1
     # via keyring
 jeepney==0.8.0
     # via
@@ -84,7 +84,7 @@ lxml==5.1.0
     # via edx-i18n-tools
 markdown-it-py==3.0.0
     # via rich
-markupsafe==2.1.4
+markupsafe==2.1.5
     # via jinja2
 mccabe==0.7.0
     # via pylint
@@ -98,7 +98,7 @@ packaging==23.2
     # via
     #   pyproject-api
     #   tox
-path==16.9.0
+path==16.10.0
     # via edx-i18n-tools
 pbr==6.0.0
     # via stevedore
@@ -143,7 +143,7 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 pyproject-api==1.6.1
     # via tox
-python-slugify==8.0.3
+python-slugify==8.0.4
     # via code-annotations
 pytz==2024.1
     # via django
