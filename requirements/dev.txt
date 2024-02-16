@@ -33,7 +33,7 @@ code-annotations==1.6.0
     # via edx-lint
 colorama==0.4.6
     # via tox
-cryptography==42.0.2
+cryptography==42.0.3
     # via secretstorage
 diff-cover==8.0.3
     # via -r requirements/dev.in
@@ -184,7 +184,7 @@ tomlkit==0.12.3
     # via pylint
 tox==4.12.1
     # via -r requirements/dev.in
-twine==4.0.2
+twine==5.0.0
     # via -r requirements/dev.in
 typing-extensions==4.9.0
     # via
