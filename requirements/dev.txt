@@ -43,7 +43,7 @@ dill==0.3.8
     # via pylint
 distlib==0.3.8
     # via virtualenv
-django==4.2.10
+django==4.2.11
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -60,11 +60,11 @@ filelock==3.13.1
     #   virtualenv
 idna==3.6
     # via requests
-importlib-metadata==7.0.1
+importlib-metadata==7.0.2
     # via
     #   keyring
     #   twine
-importlib-resources==6.1.2
+importlib-resources==6.1.3
     # via keyring
 isort==5.13.2
     # via
@@ -104,7 +104,7 @@ path==16.10.0
     # via edx-i18n-tools
 pbr==6.0.0
     # via stevedore
-pkginfo==1.9.6
+pkginfo==1.10.0
     # via twine
 platformdirs==4.2.0
     # via
@@ -182,7 +182,7 @@ tomli==2.0.1
     #   tox
 tomlkit==0.12.4
     # via pylint
-tox==4.13.0
+tox==4.14.1
     # via -r requirements/dev.in
 twine==5.0.0
     # via -r requirements/dev.in
