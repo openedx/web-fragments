@@ -10,3 +10,4 @@ Sphinx                    # Documentation builder
 sphinxcontrib-napoleon    # Google Style docstring support for sphinx
 twine
 setuptools
+wheel
