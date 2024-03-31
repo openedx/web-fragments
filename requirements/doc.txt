@@ -176,4 +176,5 @@ zipp==3.18.1
     #   importlib-resources
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools
+setuptools==69.2.0
+    # via -r requirements/doc.in
