@@ -4,14 +4,16 @@
 #
 #    make upgrade
 #
-asgiref==3.7.2
+asgiref==3.8.1
     # via django
 astroid==3.1.0
     # via
     #   pylint
     #   pylint-celery
-backports-zoneinfo==0.2.1
-    # via django
+backports-zoneinfo==0.2.1 ; python_version < "3.9"
+    # via
+    #   -c requirements/constraints.txt
+    #   django
 click==8.1.7
     # via
     #   click-log
@@ -19,11 +21,11 @@ click==8.1.7
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.6.0
+code-annotations==1.7.0
     # via edx-lint
 dill==0.3.8
     # via pylint
-django==4.2.10
+django==4.2.11
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
