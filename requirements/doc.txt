@@ -172,3 +172,6 @@ zipp==3.18.1
     # via
     #   importlib-metadata
     #   importlib-resources
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
