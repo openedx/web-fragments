@@ -21,7 +21,7 @@ click==8.1.7
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==1.7.0
+code-annotations==1.8.0
     # via edx-lint
 dill==0.3.8
     # via pylint
@@ -71,7 +71,7 @@ six==1.16.0
     # via edx-lint
 snowballstemmer==2.2.0
     # via pydocstyle
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via django
 stevedore==5.2.0
     # via code-annotations
@@ -81,7 +81,7 @@ tomli==2.0.1
     # via pylint
 tomlkit==0.12.4
     # via pylint
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   asgiref
     #   astroid
