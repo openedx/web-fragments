@@ -12,7 +12,7 @@ astroid==3.1.0
     #   pylint-celery
 backports-zoneinfo==0.2.1 ; python_version < "3.9"
     # via
-    #   -c requirements/constraints.txt
+    #   -c constraints.txt
     #   django
 click==8.1.7
     # via
@@ -25,15 +25,15 @@ code-annotations==1.7.0
     # via edx-lint
 dill==0.3.8
     # via pylint
-django==4.2.11
+django==4.2.17
     # via
-    #   -c requirements/common_constraints.txt
-    #   -r requirements/quality.in
+    #   -c common_constraints.txt
+    #   -r quality.in
 edx-lint==5.3.6
-    # via -r requirements/quality.in
+    # via -r quality.in
 isort==5.13.2
     # via
-    #   -r requirements/quality.in
+    #   -r quality.in
     #   pylint
 jinja2==3.1.3
     # via code-annotations
@@ -46,9 +46,9 @@ pbr==6.0.0
 platformdirs==4.2.0
     # via pylint
 pycodestyle==2.11.1
-    # via -r requirements/quality.in
+    # via -r quality.in
 pydocstyle==6.3.0
-    # via -r requirements/quality.in
+    # via -r quality.in
 pylint==3.1.0
     # via
     #   edx-lint

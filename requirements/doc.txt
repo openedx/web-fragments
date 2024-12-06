@@ -16,7 +16,7 @@ babel==2.14.0
     #   sphinx
 backports-zoneinfo==0.2.1 ; python_version < "3.9"
     # via
-    #   -c requirements/constraints.txt
+    #   -c constraints.txt
     #   django
 beautifulsoup4==4.12.3
     # via pydata-sphinx-theme
@@ -28,12 +28,12 @@ charset-normalizer==3.3.2
     # via requests
 cryptography==42.0.5
     # via secretstorage
-django==4.2.11
+django==4.2.17
     # via
-    #   -c requirements/common_constraints.txt
-    #   -r requirements/doc.in
+    #   -c common_constraints.txt
+    #   -r doc.in
 doc8==1.1.1
-    # via -r requirements/doc.in
+    # via -r doc.in
 docutils==0.19
     # via
     #   doc8
@@ -47,7 +47,7 @@ imagesize==1.4.1
     # via sphinx
 importlib-metadata==6.11.0
     # via
-    #   -c requirements/common_constraints.txt
+    #   -c common_constraints.txt
     #   keyring
     #   sphinx
     #   twine
@@ -105,7 +105,7 @@ pytz==2024.1
     # via babel
 readme-renderer==43.0
     # via
-    #   -r requirements/doc.in
+    #   -r doc.in
     #   twine
 requests==2.31.0
     # via
@@ -132,11 +132,11 @@ soupsieve==2.5
     # via beautifulsoup4
 sphinx==6.2.1
     # via
-    #   -r requirements/doc.in
+    #   -r doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
 sphinx-book-theme==1.0.1
-    # via -r requirements/doc.in
+    # via -r doc.in
 sphinxcontrib-applehelp==1.0.4
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
@@ -146,7 +146,7 @@ sphinxcontrib-htmlhelp==2.0.1
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-napoleon==0.7
-    # via -r requirements/doc.in
+    # via -r doc.in
 sphinxcontrib-qthelp==1.0.3
     # via sphinx
 sphinxcontrib-serializinghtml==1.1.5
@@ -158,7 +158,7 @@ stevedore==5.2.0
 tomli==2.0.1
     # via doc8
 twine==5.0.0
-    # via -r requirements/doc.in
+    # via -r doc.in
 typing-extensions==4.10.0
     # via
     #   asgiref
