@@ -151,7 +151,7 @@ stevedore==5.4.1
     # via doc8
 twine==6.1.0
     # via -r requirements/doc.in
-typing-extensions==4.13.0
+typing-extensions==4.13.2
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
