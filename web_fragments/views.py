@@ -22,7 +22,7 @@ class FragmentView(View, metaclass=ABCMeta):
         """
         fragment = self.render_to_fragment(request, **kwargs)
         response_format = request.GET.get('format') or request.POST.get('format') or 'html'
-        if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.META.get('HTTP_ACCEPT', 'text/html'):
+        if response_format == 'json' or WEB_FRAGMENT_RESPONSE_TYPE in request.headers.get('accept', 'text/html'):
             return JsonResponse(fragment.to_dict())
 
         return self.render_standalone_response(request, fragment, **kwargs)
