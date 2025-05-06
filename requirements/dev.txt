@@ -14,7 +14,7 @@ backports-tarfile==1.2.0
     # via jaraco-context
 cachetools==5.5.2
     # via tox
-certifi==2025.1.31
+certifi==2025.4.26
     # via requests
 cffi==1.17.1
     # via cryptography
@@ -31,7 +31,7 @@ click==8.1.8
     #   edx-lint
 click-log==0.4.0
     # via edx-lint
-code-annotations==2.2.0
+code-annotations==2.3.0
     # via edx-lint
 colorama==0.4.6
     # via tox
@@ -39,7 +39,7 @@ cryptography==44.0.2
     # via secretstorage
 diff-cover==9.2.4
     # via -r requirements/dev.in
-dill==0.3.9
+dill==0.4.0
     # via pylint
 distlib==0.3.9
     # via virtualenv
@@ -50,7 +50,7 @@ django==4.2.20
     #   edx-i18n-tools
 docutils==0.21.2
     # via readme-renderer
-edx-i18n-tools==1.7.0
+edx-i18n-tools==1.9.0
     # via -r requirements/dev.in
 edx-lint==5.6.0
     # via -r requirements/quality.in
@@ -62,7 +62,7 @@ id==1.5.0
     # via twine
 idna==3.10
     # via requests
-importlib-metadata==8.6.1
+importlib-metadata==8.7.0
     # via keyring
 isort==6.0.1
     # via
@@ -84,11 +84,11 @@ jinja2==3.1.6
     #   diff-cover
 keyring==25.6.0
     # via twine
-lxml[html-clean,html_clean]==5.3.1
+lxml[html-clean,html_clean]==5.4.0
     # via
     #   edx-i18n-tools
     #   lxml-html-clean
-lxml-html-clean==0.4.1
+lxml-html-clean==0.4.2
     # via lxml
 markdown-it-py==3.0.0
     # via rich
@@ -98,13 +98,13 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.6.0
+more-itertools==10.7.0
     # via
     #   jaraco-classes
     #   jaraco-functools
 nh3==0.2.21
     # via readme-renderer
-packaging==24.2
+packaging==25.0
     # via
     #   pyproject-api
     #   tox
