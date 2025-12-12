@@ -19,7 +19,7 @@ jobs:
         toxenv: [django42, django52, docs, quality]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: setup python
       uses: actions/setup-python@v6
       with:
