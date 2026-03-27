@@ -16,7 +16,7 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0
     # via cryptography
-chardet==7.2.0
+chardet==7.4.0.post1
     # via diff-cover
 charset-normalizer==3.4.6
     # via requests
@@ -31,7 +31,7 @@ code-annotations==3.0.0
     # via edx-lint
 colorama==0.4.6
     # via tox
-cryptography==46.0.5
+cryptography==46.0.6
     # via secretstorage
 diff-cover==10.2.0
     # via -r requirements/dev.in
@@ -65,7 +65,7 @@ isort==8.0.1
     #   pylint
 jaraco-classes==3.4.0
     # via keyring
-jaraco-context==6.1.1
+jaraco-context==6.1.2
     # via keyring
 jaraco-functools==4.4.0
     # via keyring
@@ -97,7 +97,7 @@ more-itertools==10.8.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-nh3==0.3.3
+nh3==0.3.4
     # via readme-renderer
 packaging==26.0
     # via
@@ -147,7 +147,7 @@ pylint-plugin-utils==0.9.0
     #   pylint-django
 pyproject-api==1.10.0
     # via tox
-python-discovery==1.2.0
+python-discovery==1.2.1
     # via virtualenv
 python-slugify==8.0.4
     # via code-annotations
@@ -157,7 +157,7 @@ pyyaml==6.0.3
     #   edx-i18n-tools
 readme-renderer==44.0
     # via twine
-requests==2.32.5
+requests==2.33.0
     # via
     #   requests-toolbelt
     #   twine
