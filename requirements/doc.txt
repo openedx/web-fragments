@@ -20,7 +20,7 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0
     # via cryptography
-charset-normalizer==3.4.6
+charset-normalizer==3.4.7
     # via requests
 cryptography==46.0.6
     # via secretstorage
@@ -63,7 +63,7 @@ markupsafe==3.0.3
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.8.0
+more-itertools==11.0.1
     # via
     #   jaraco-classes
     #   jaraco-functools
@@ -79,7 +79,7 @@ pycparser==3.0
     # via cffi
 pydata-sphinx-theme==0.16.1
     # via sphinx-book-theme
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   accessible-pygments
     #   doc8
@@ -91,7 +91,7 @@ readme-renderer==44.0
     # via
     #   -r requirements/doc.in
     #   twine
-requests==2.33.0
+requests==2.33.1
     # via
     #   requests-toolbelt
     #   sphinx

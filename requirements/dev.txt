@@ -16,9 +16,9 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0
     # via cryptography
-chardet==7.4.0.post1
+chardet==7.4.0.post2
     # via diff-cover
-charset-normalizer==3.4.6
+charset-normalizer==3.4.7
     # via requests
 click==8.3.1
     # via
@@ -93,7 +93,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.8.0
+more-itertools==11.0.1
     # via
     #   jaraco-classes
     #   jaraco-functools
@@ -126,7 +126,7 @@ pycparser==3.0
     # via cffi
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   diff-cover
     #   readme-renderer
@@ -148,7 +148,9 @@ pylint-plugin-utils==0.9.0
 pyproject-api==1.10.0
     # via tox
 python-discovery==1.2.1
-    # via virtualenv
+    # via
+    #   tox
+    #   virtualenv
 python-slugify==8.0.4
     # via code-annotations
 pyyaml==6.0.3
@@ -157,7 +159,7 @@ pyyaml==6.0.3
     #   edx-i18n-tools
 readme-renderer==44.0
     # via twine
-requests==2.33.0
+requests==2.33.1
     # via
     #   requests-toolbelt
     #   twine
@@ -183,7 +185,7 @@ tomli-w==1.2.0
     # via tox
 tomlkit==0.14.0
     # via pylint
-tox==4.50.3
+tox==4.52.0
     # via -r requirements/dev.in
 twine==6.2.0
     # via -r requirements/dev.in
