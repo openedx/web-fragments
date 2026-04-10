@@ -10,7 +10,7 @@ astroid==4.0.4
     # via
     #   pylint
     #   pylint-celery
-click==8.3.1
+click==8.3.2
     # via
     #   click-log
     #   code-annotations
@@ -21,7 +21,7 @@ code-annotations==3.0.0
     # via edx-lint
 dill==0.4.1
     # via pylint
-django==5.2.12
+django==5.2.13
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -37,7 +37,7 @@ markupsafe==3.0.3
     # via jinja2
 mccabe==0.7.0
     # via pylint
-platformdirs==4.9.4
+platformdirs==4.9.6
     # via pylint
 pycodestyle==2.14.0
     # via -r requirements/quality.in

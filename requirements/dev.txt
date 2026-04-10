@@ -16,11 +16,11 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0
     # via cryptography
-chardet==7.4.0.post2
+chardet==7.4.1
     # via diff-cover
 charset-normalizer==3.4.7
     # via requests
-click==8.3.1
+click==8.3.2
     # via
     #   click-log
     #   code-annotations
@@ -31,7 +31,7 @@ code-annotations==3.0.0
     # via edx-lint
 colorama==0.4.6
     # via tox
-cryptography==46.0.6
+cryptography==46.0.7
     # via secretstorage
 diff-cover==10.2.0
     # via -r requirements/dev.in
@@ -39,7 +39,7 @@ dill==0.4.1
     # via pylint
 distlib==0.4.0
     # via virtualenv
-django==5.2.12
+django==5.2.13
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/quality.in
@@ -79,7 +79,7 @@ jinja2==3.1.6
     #   diff-cover
 keyring==25.7.0
     # via twine
-lxml[html-clean]==6.0.2
+lxml[html-clean]==6.0.3
     # via
     #   edx-i18n-tools
     #   lxml-html-clean
@@ -93,7 +93,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==11.0.1
+more-itertools==11.0.2
     # via
     #   jaraco-classes
     #   jaraco-functools
@@ -107,7 +107,7 @@ packaging==26.0
     #   wheel
 path==16.16.0
     # via edx-i18n-tools
-platformdirs==4.9.4
+platformdirs==4.9.6
     # via
     #   pylint
     #   python-discovery
@@ -147,7 +147,7 @@ pylint-plugin-utils==0.9.0
     #   pylint-django
 pyproject-api==1.10.0
     # via tox
-python-discovery==1.2.1
+python-discovery==1.2.2
     # via
     #   tox
     #   virtualenv
@@ -185,7 +185,7 @@ tomli-w==1.2.0
     # via tox
 tomlkit==0.14.0
     # via pylint
-tox==4.52.0
+tox==4.52.1
     # via -r requirements/dev.in
 twine==6.2.0
     # via -r requirements/dev.in
@@ -194,7 +194,7 @@ urllib3==2.6.3
     #   id
     #   requests
     #   twine
-virtualenv==21.2.0
+virtualenv==21.2.1
     # via
     #   -r requirements/dev.in
     #   tox
