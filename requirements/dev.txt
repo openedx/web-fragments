@@ -16,7 +16,7 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0
     # via cryptography
-chardet==7.4.1
+chardet==7.4.3
     # via diff-cover
 charset-normalizer==3.4.7
     # via requests
@@ -50,7 +50,7 @@ edx-i18n-tools==2.0.0
     # via -r requirements/dev.in
 edx-lint==6.0.0
     # via -r requirements/quality.in
-filelock==3.25.2
+filelock==3.28.0
     # via
     #   python-discovery
     #   tox
@@ -79,7 +79,7 @@ jinja2==3.1.6
     #   diff-cover
 keyring==25.7.0
     # via twine
-lxml[html-clean]==6.0.3
+lxml[html-clean]==6.0.4
     # via
     #   edx-i18n-tools
     #   lxml-html-clean
@@ -99,7 +99,7 @@ more-itertools==11.0.2
     #   jaraco-functools
 nh3==0.3.4
     # via readme-renderer
-packaging==26.0
+packaging==26.1
     # via
     #   pyproject-api
     #   tox
@@ -167,7 +167,7 @@ requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==14.3.3
+rich==15.0.0
     # via twine
 secretstorage==3.5.0
     # via keyring
@@ -185,7 +185,7 @@ tomli-w==1.2.0
     # via tox
 tomlkit==0.14.0
     # via pylint
-tox==4.52.1
+tox==4.53.0
     # via -r requirements/dev.in
 twine==6.2.0
     # via -r requirements/dev.in
@@ -194,7 +194,7 @@ urllib3==2.6.3
     #   id
     #   requests
     #   twine
-virtualenv==21.2.1
+virtualenv==21.2.4
     # via
     #   -r requirements/dev.in
     #   tox
