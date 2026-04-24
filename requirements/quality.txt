@@ -10,7 +10,7 @@ astroid==4.0.4
     # via
     #   pylint
     #   pylint-celery
-click==8.3.2
+click==8.3.3
     # via
     #   click-log
     #   code-annotations

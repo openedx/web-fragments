@@ -10,9 +10,9 @@ astroid==4.0.4
     # via
     #   pylint
     #   pylint-celery
-cachetools==7.0.5
+cachetools==7.0.6
     # via tox
-certifi==2026.2.25
+certifi==2026.4.22
     # via requests
 cffi==2.0.0
     # via cryptography
@@ -20,7 +20,7 @@ chardet==7.4.3
     # via diff-cover
 charset-normalizer==3.4.7
     # via requests
-click==8.3.2
+click==8.3.3
     # via
     #   click-log
     #   code-annotations
@@ -50,14 +50,14 @@ edx-i18n-tools==2.0.0
     # via -r requirements/dev.in
 edx-lint==6.0.0
     # via -r requirements/quality.in
-filelock==3.28.0
+filelock==3.29.0
     # via
     #   python-discovery
     #   tox
     #   virtualenv
 id==1.6.1
     # via twine
-idna==3.11
+idna==3.13
     # via requests
 isort==8.0.1
     # via
@@ -79,7 +79,7 @@ jinja2==3.1.6
     #   diff-cover
 keyring==25.7.0
     # via twine
-lxml[html-clean]==6.0.4
+lxml[html-clean]==6.1.0
     # via
     #   edx-i18n-tools
     #   lxml-html-clean
@@ -198,5 +198,5 @@ virtualenv==21.2.4
     # via
     #   -r requirements/dev.in
     #   tox
-wheel==0.46.3
+wheel==0.47.0
     # via -r requirements/dev.in

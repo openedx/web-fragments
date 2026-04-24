@@ -16,7 +16,7 @@ babel==2.18.0
     #   sphinx
 beautifulsoup4==4.14.3
     # via pydata-sphinx-theme
-certifi==2026.2.25
+certifi==2026.4.22
     # via requests
 cffi==2.0.0
     # via cryptography
@@ -39,7 +39,7 @@ docutils==0.21.2
     #   sphinx
 id==1.6.1
     # via twine
-idna==3.11
+idna==3.13
     # via requests
 imagesize==2.0.0
     # via sphinx
