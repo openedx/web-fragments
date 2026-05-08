@@ -22,9 +22,9 @@ cffi==2.0.0
     # via cryptography
 charset-normalizer==3.4.7
     # via requests
-cryptography==47.0.0
+cryptography==48.0.0
     # via secretstorage
-django==5.2.13
+django==5.2.14
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
@@ -57,7 +57,7 @@ jinja2==3.1.6
     # via sphinx
 keyring==25.7.0
     # via twine
-markdown-it-py==4.0.0
+markdown-it-py==4.2.0
     # via rich
 markupsafe==3.0.3
     # via jinja2
@@ -147,7 +147,7 @@ typing-extensions==4.15.0
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
-urllib3==2.6.3
+urllib3==2.7.0
     # via
     #   id
     #   requests
