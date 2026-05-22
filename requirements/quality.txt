@@ -10,7 +10,7 @@ astroid==4.0.4
     # via
     #   pylint
     #   pylint-celery
-click==8.3.3
+click==8.4.1
     # via
     #   click-log
     #   code-annotations
@@ -67,7 +67,7 @@ snowballstemmer==3.0.1
     # via pydocstyle
 sqlparse==0.5.5
     # via django
-stevedore==5.7.0
+stevedore==5.8.0
     # via code-annotations
 text-unidecode==1.3
     # via python-slugify
