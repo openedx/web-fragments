@@ -37,7 +37,7 @@ markupsafe==3.0.3
     # via jinja2
 mccabe==0.7.0
     # via pylint
-platformdirs==4.9.6
+platformdirs==4.10.0
     # via pylint
 pycodestyle==2.14.0
     # via -r requirements/quality.in
@@ -63,7 +63,7 @@ pyyaml==6.0.3
     # via code-annotations
 six==1.17.0
     # via edx-lint
-snowballstemmer==3.0.1
+snowballstemmer==3.1.0
     # via pydocstyle
 sqlparse==0.5.5
     # via django
