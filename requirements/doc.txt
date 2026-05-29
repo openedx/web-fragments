@@ -39,7 +39,7 @@ docutils==0.21.2
     #   sphinx
 id==1.6.1
     # via twine
-idna==3.16
+idna==3.17
     # via requests
 imagesize==2.0.0
     # via sphinx
@@ -63,7 +63,7 @@ markupsafe==3.0.3
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==11.0.2
+more-itertools==11.1.0
     # via
     #   jaraco-classes
     #   jaraco-functools
@@ -112,9 +112,9 @@ six==1.17.0
     # via
     #   pockets
     #   sphinxcontrib-napoleon
-snowballstemmer==3.0.1
+snowballstemmer==3.1.0
     # via sphinx
-soupsieve==2.8.3
+soupsieve==2.8.4
     # via beautifulsoup4
 sphinx==9.1.0
     # via
