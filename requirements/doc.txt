@@ -24,7 +24,7 @@ charset-normalizer==3.4.7
     # via requests
 cryptography==48.0.0
     # via secretstorage
-django==5.2.14
+django==5.2.15
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
@@ -39,7 +39,7 @@ docutils==0.21.2
     #   sphinx
 id==1.6.1
     # via twine
-idna==3.17
+idna==3.18
     # via requests
 imagesize==2.0.0
     # via sphinx
@@ -112,7 +112,7 @@ six==1.17.0
     # via
     #   pockets
     #   sphinxcontrib-napoleon
-snowballstemmer==3.1.0
+snowballstemmer==3.1.1
     # via sphinx
 soupsieve==2.8.4
     # via beautifulsoup4
