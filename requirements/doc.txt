@@ -14,7 +14,7 @@ babel==2.18.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
     # via pydata-sphinx-theme
 certifi==2026.5.20
     # via requests
@@ -22,7 +22,7 @@ cffi==2.0.0
     # via cryptography
 charset-normalizer==3.4.7
     # via requests
-cryptography==48.0.0
+cryptography==48.0.1
     # via secretstorage
 django==5.2.15
     # via
@@ -87,7 +87,7 @@ pygments==2.20.0
     #   readme-renderer
     #   rich
     #   sphinx
-readme-renderer==44.0
+readme-renderer==45.0
     # via
     #   -r requirements/doc.in
     #   twine
