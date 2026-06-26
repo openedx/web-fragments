@@ -12,7 +12,7 @@ astroid==4.0.4
     #   pylint-celery
 cachetools==7.1.4
     # via tox
-certifi==2026.5.20
+certifi==2026.6.17
     # via requests
 cffi==2.0.0
     # via cryptography
@@ -20,7 +20,7 @@ chardet==7.4.3
     # via diff-cover
 charset-normalizer==3.4.7
     # via requests
-click==8.4.1
+click==8.4.2
     # via
     #   click-log
     #   code-annotations
@@ -31,13 +31,13 @@ code-annotations==3.0.0
     # via edx-lint
 colorama==0.4.6
     # via tox
-cryptography==48.0.0
+cryptography==49.0.0
     # via secretstorage
 diff-cover==10.3.0
     # via -r requirements/dev.in
 dill==0.4.1
     # via pylint
-distlib==0.4.1
+distlib==0.4.3
     # via virtualenv
 django==5.2.15
     # via
@@ -50,7 +50,7 @@ edx-i18n-tools==2.0.0
     # via -r requirements/dev.in
 edx-lint==6.1.0
     # via -r requirements/quality.in
-filelock==3.29.1
+filelock==3.29.4
     # via
     #   python-discovery
     #   tox
@@ -97,7 +97,7 @@ more-itertools==11.1.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-nh3==0.3.5
+nh3==0.3.6
     # via readme-renderer
 packaging==26.2
     # via
@@ -131,7 +131,7 @@ pygments==2.20.0
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==4.0.5
+pylint==4.0.6
     # via
     #   edx-lint
     #   pylint-celery
@@ -147,7 +147,7 @@ pylint-plugin-utils==0.9.0
     #   pylint-django
 pyproject-api==1.10.1
     # via tox
-python-discovery==1.4.0
+python-discovery==1.4.2
     # via
     #   tox
     #   virtualenv
@@ -157,7 +157,7 @@ pyyaml==6.0.3
     # via
     #   code-annotations
     #   edx-i18n-tools
-readme-renderer==44.0
+readme-renderer==45.0
     # via twine
 requests==2.34.2
     # via
@@ -187,7 +187,7 @@ tomlkit==0.15.0
     # via
     #   edx-lint
     #   pylint
-tox==4.55.1
+tox==4.56.1
     # via -r requirements/dev.in
 twine==6.2.0
     # via -r requirements/dev.in
@@ -196,7 +196,7 @@ urllib3==2.7.0
     #   id
     #   requests
     #   twine
-virtualenv==21.4.2
+virtualenv==21.5.1
     # via
     #   -r requirements/dev.in
     #   tox

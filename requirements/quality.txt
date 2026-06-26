@@ -10,7 +10,7 @@ astroid==4.0.4
     # via
     #   pylint
     #   pylint-celery
-click==8.4.1
+click==8.4.2
     # via
     #   click-log
     #   code-annotations
@@ -43,7 +43,7 @@ pycodestyle==2.14.0
     # via -r requirements/quality.in
 pydocstyle==6.3.0
     # via -r requirements/quality.in
-pylint==4.0.5
+pylint==4.0.6
     # via
     #   edx-lint
     #   pylint-celery
