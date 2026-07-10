@@ -14,17 +14,17 @@ babel==2.18.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
     # via pydata-sphinx-theme
-certifi==2026.5.20
+certifi==2026.6.17
     # via requests
-cffi==2.0.0
+cffi==2.1.0
     # via cryptography
-charset-normalizer==3.4.7
+charset-normalizer==3.4.9
     # via requests
-cryptography==48.0.0
+cryptography==49.0.0
     # via secretstorage
-django==5.2.15
+django==5.2.16
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
@@ -67,7 +67,7 @@ more-itertools==11.1.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-nh3==0.3.5
+nh3==0.3.6
     # via readme-renderer
 packaging==26.2
     # via
@@ -87,7 +87,7 @@ pygments==2.20.0
     #   readme-renderer
     #   rich
     #   sphinx
-readme-renderer==44.0
+readme-renderer==45.0
     # via
     #   -r requirements/doc.in
     #   twine
@@ -139,11 +139,11 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 sqlparse==0.5.5
     # via django
-stevedore==5.8.0
+stevedore==5.9.0
     # via doc8
 twine==6.2.0
     # via -r requirements/doc.in
-typing-extensions==4.15.0
+typing-extensions==4.16.0
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
